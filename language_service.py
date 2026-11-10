@@ -8,6 +8,7 @@ SUPPORTED_LANGUAGES = {
     "Arabic": "Arabic",
     "Hindi": "Hindi",
     "Japanese": "Japanese",
+    "Chinese": "Simplified Chinese",
 }
 
 
