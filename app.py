@@ -99,6 +99,7 @@ if st.session_state.get("_language_country") != country:
     st.session_state.pop("previous_digest", None)
 
 
+# Number of articles
 max_articles = st.slider(
     "Number of articles",
     min_value=5,
@@ -108,10 +109,11 @@ max_articles = st.slider(
 
 
 # Summary language selection
+# The selected language is initialized in session state above.
+# No index parameter is needed here.
 selected_language = st.selectbox(
     "Choose your news summary language",
     supported_languages,
-    index=supported_languages.index(preferred_language),
     key="selected_language",
 )
 
