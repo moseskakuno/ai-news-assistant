@@ -22,6 +22,7 @@ def initialize_database():
 
     with get_connection() as connection:
 
+        # Articles table
         connection.execute(
             """
             CREATE TABLE IF NOT EXISTS articles (
@@ -39,6 +40,7 @@ def initialize_database():
             """
         )
 
+        # Daily news digests table
         connection.execute(
             """
             CREATE TABLE IF NOT EXISTS digests (
@@ -48,6 +50,20 @@ def initialize_database():
                 content TEXT NOT NULL,
                 article_count INTEGER NOT NULL,
                 created_at TEXT NOT NULL
+            )
+            """
+        )
+
+        # Individual AI-generated article summaries table
+        connection.execute(
+            """
+            CREATE TABLE IF NOT EXISTS article_summaries (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                article_url TEXT NOT NULL,
+                language TEXT NOT NULL,
+                content TEXT NOT NULL,
+                created_at TEXT NOT NULL,
+                UNIQUE(article_url, language)
             )
             """
         )
@@ -130,6 +146,86 @@ def get_articles(country, limit=50):
         ).fetchall()
 
     return [dict(row) for row in rows]
+
+
+def save_article_summary(article_url, language, content):
+    """Save or update an individual AI-generated article summary."""
+
+    if not article_url or not language or not content:
+        raise ValueError(
+            "Article URL, language, and summary content are required."
+        )
+
+    created_at = datetime.now(timezone.utc).isoformat()
+
+    with get_connection() as connection:
+
+        connection.execute(
+            """
+            INSERT INTO article_summaries (
+                article_url,
+                language,
+                content,
+                created_at
+            )
+            VALUES (?, ?, ?, ?)
+
+            ON CONFLICT(article_url, language) DO UPDATE SET
+                content = excluded.content,
+                created_at = excluded.created_at
+            """,
+            (
+                article_url,
+                language,
+                content,
+                created_at,
+            ),
+        )
+
+
+def get_article_summary(article_url, language):
+    """Retrieve an individual article summary in a specific language."""
+
+    with get_connection() as connection:
+
+        row = connection.execute(
+            """
+            SELECT *
+            FROM article_summaries
+            WHERE article_url = ? AND language = ?
+            """,
+            (article_url, language),
+        ).fetchone()
+
+    return dict(row) if row else None
+
+
+def get_article_summaries(article_urls, language):
+    """Retrieve saved summaries for multiple articles in one language."""
+
+    if not article_urls:
+        return {}
+
+    placeholders = ",".join("?" for _ in article_urls)
+
+    query = f"""
+        SELECT *
+        FROM article_summaries
+        WHERE article_url IN ({placeholders})
+        AND language = ?
+    """
+
+    with get_connection() as connection:
+
+        rows = connection.execute(
+            query,
+            (*article_urls, language),
+        ).fetchall()
+
+    return {
+        row["article_url"]: dict(row)
+        for row in rows
+    }
 
 
 def save_digest(country, language, content, article_count):

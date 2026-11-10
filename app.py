@@ -1,9 +1,17 @@
 
+import hashlib
+
 import streamlit as st
 
 from news_discovery import fetch_news
 from article_processor import process_articles
-from ai_summarizer import generate_news_digest
+
+from ai_summarizer import (
+    generate_news_digest,
+    generate_article_summary,
+)
+
+from content_extractor import extract_article_content
 
 from country_service import (
     get_countries,
@@ -18,6 +26,8 @@ from news_database import (
     save_digest,
     get_articles,
     get_latest_digest,
+    save_article_summary,
+    get_article_summary,
 )
 
 
@@ -174,7 +184,7 @@ if "articles" in st.session_state:
         f"{len(articles)} articles retrieved"
     )
 
-    for article in articles:
+    for index, article in enumerate(articles, start=1):
 
         with st.container():
 
@@ -192,11 +202,127 @@ if "articles" in st.session_state:
             )
 
             if article.get("summary"):
+
                 st.write(article["summary"])
 
             st.markdown(
                 f"[Read original article]({article['url']})"
             )
+
+            # Create a stable identifier for this article.
+            article_id = hashlib.sha256(
+                article["url"].encode("utf-8")
+            ).hexdigest()[:16]
+
+            # Individual AI article summary
+            with st.expander(
+                "📖 Read AI-generated article summary"
+            ):
+
+                try:
+
+                    # Check whether a summary already exists
+                    # for this article and selected language.
+                    saved_summary = get_article_summary(
+                        article["url"],
+                        selected_language,
+                    )
+
+                    if saved_summary:
+
+                        st.markdown(
+                            saved_summary["content"]
+                        )
+
+                        st.caption(
+                            "Previously generated summary "
+                            f"({selected_language})."
+                        )
+
+                    else:
+
+                        st.caption(
+                            "Generate an approximately 200-word "
+                            "summary of this article."
+                        )
+
+                        if st.button(
+                            "Generate Article Summary",
+                            key=f"summarize_{article_id}",
+                        ):
+
+                            with st.spinner(
+                                "Extracting article and generating summary..."
+                            ):
+
+                                # Try to retrieve the original article text.
+                                extracted_content = (
+                                    extract_article_content(
+                                        article["url"]
+                                    )
+                                )
+
+                                # Prepare the article information
+                                # for the AI summarizer.
+                                summary_article = article.copy()
+
+                                if extracted_content:
+
+                                    summary_article["content"] = (
+                                        extracted_content
+                                    )
+
+                                    summary_article["content_type"] = (
+                                        "full_article_text"
+                                    )
+
+                                else:
+
+                                    # Fall back to the RSS summary.
+                                    summary_article["content"] = (
+                                        article.get("summary", "")
+                                    )
+
+                                    summary_article["content_type"] = (
+                                        "rss_summary"
+                                    )
+
+                                # Generate the individual summary.
+                                generated_summary = (
+                                    generate_article_summary(
+                                        summary_article,
+                                        language=selected_language,
+                                    )
+                                )
+
+                                # Save the summary in SQLite.
+                                save_article_summary(
+                                    article["url"],
+                                    selected_language,
+                                    generated_summary,
+                                )
+
+                            st.success(
+                                "Article summary generated and saved."
+                            )
+
+                            st.markdown(generated_summary)
+
+                            if not extracted_content:
+
+                                st.caption(
+                                    "Note: Full article text could not "
+                                    "be retrieved. The summary was "
+                                    "based on the available RSS "
+                                    "information, if sufficient."
+                                )
+
+                except Exception as error:
+
+                    st.error(
+                        f"Could not generate or retrieve "
+                        f"the article summary: {error}"
+                    )
 
             st.divider()
 

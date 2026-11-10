@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from language_service import get_language_instruction
 
+
 # Load environment variables
 load_dotenv()
 
@@ -22,6 +23,98 @@ if not MODEL:
 
 # Initialize OpenAI client
 client = OpenAI(api_key=API_KEY)
+
+
+def generate_article_summary(article, language="English"):
+    """
+    Generate an individual AI-powered summary of a news article.
+
+    Prefer extracted article text. Use the RSS summary only
+    when full article text is unavailable.
+    """
+
+    title = article.get("title", "Untitled")
+    publisher = article.get("source", "Unknown")
+    published_at = article.get("published_at", "Unknown")
+    article_url = article.get("url", "")
+
+    article_content = (
+        article.get("content")
+        or article.get("summary")
+        or ""
+    ).strip()
+
+    content_type = article.get("content_type", "unknown")
+
+    if not article_content:
+        return (
+            "A detailed summary is unavailable because "
+            "no article text or RSS summary could be retrieved."
+        )
+
+    # Avoid presenting a short RSS snippet as a full article summary.
+    if content_type == "rss_summary" and len(article_content) < 500:
+        return (
+            "A detailed summary is unavailable because the publisher "
+            "did not provide enough article text. "
+            "Please consult the original article for further details."
+        )
+
+    language_instruction = get_language_instruction(language)
+
+    instructions = f"""
+You are a professional international news journalist.
+
+Create an accurate, readable summary of the supplied news article.
+
+Requirements:
+
+1. Aim for approximately 200 words when sufficient article
+   information is available.
+2. Use only facts explicitly stated in the supplied material.
+3. Never invent names, dates, statistics, quotations, events,
+   explanations, or background information.
+4. Do not use external knowledge or assumptions.
+5. Preserve the meaning and context of the original reporting.
+6. Explain the main development and its reported significance
+   only when the supplied text supports that explanation.
+7. Use a neutral, factual, professional journalistic tone.
+8. Do not reproduce long passages from the original article.
+9. Do not create information that is absent from the source.
+10. If the supplied information is limited, write a shorter
+    summary rather than adding unsupported details.
+11. Do not claim that the full article was available unless
+    full article text was actually supplied.
+12. Do not include a fabricated conclusion or prediction.
+
+{language_instruction}
+"""
+
+    try:
+        response = client.responses.create(
+            model=MODEL,
+            instructions=instructions,
+            input=f"""
+Summarize the following news article.
+
+Headline: {title}
+Publisher: {publisher}
+Publication date: {published_at}
+Original URL: {article_url}
+Information type: {content_type}
+
+Available article information:
+
+{article_content}
+"""
+        )
+
+        return response.output_text.strip()
+
+    except Exception as error:
+        raise RuntimeError(
+            f"Could not generate the article summary: {error}"
+        ) from error
 
 
 def generate_news_digest(articles, country, language="English"):
@@ -77,10 +170,9 @@ Requirements:
 12. Avoid repeating the same story.
 13. Make clear that the digest is based on RSS summaries,
     not necessarily full articles.
-14. Write the digest in English.
 """
-    language_instruction = get_language_instruction(language)
 
+    language_instruction = get_language_instruction(language)
     instructions = instructions + "\n" + language_instruction
 
     try:
