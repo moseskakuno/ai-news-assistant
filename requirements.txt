@@ -1,3 +1,4 @@
+
 streamlit
 openai
 python-dotenv
@@ -5,3 +6,4 @@ requests
 feedparser
 beautifulsoup4
 pandas
+pycountry

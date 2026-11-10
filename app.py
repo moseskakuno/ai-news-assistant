@@ -4,8 +4,14 @@ import streamlit as st
 from news_discovery import fetch_news
 from article_processor import process_articles
 from ai_summarizer import generate_news_digest
-from source_manager import NEWS_SOURCES
+
+from country_service import (
+    get_countries,
+    get_country_language,
+)
+
 from language_service import get_supported_languages
+
 from news_database import (
     initialize_database,
     save_articles,
@@ -34,7 +40,8 @@ st.markdown(
     """
     ### Your daily international news overview
 
-    Start with verified news feeds, with more countries coming soon.
+    Explore news from countries around the world.
+    Available news sources depend on the selected country.
     Generate AI-powered summaries in your preferred language.
     """
 )
@@ -43,12 +50,44 @@ st.divider()
 
 
 # Country selection
-available_countries = list(NEWS_SOURCES.keys())
+available_countries = get_countries()
 
 country = st.selectbox(
     "Select a country",
     available_countries,
+    index=available_countries.index("Germany"),
+    key="selected_country",
 )
+
+
+# Automatically determine the country's preferred language
+country_settings = get_country_language(country)
+
+preferred_language = country_settings["language"]
+
+supported_languages = get_supported_languages()
+
+if preferred_language not in supported_languages:
+    preferred_language = "English"
+
+
+# Update the default language when the country changes.
+# Preserve a user's manual language choice while the country
+# remains unchanged.
+if st.session_state.get("_language_country") != country:
+
+    st.session_state["selected_language"] = preferred_language
+
+    st.session_state["_language_country"] = country
+
+    # Clear country-specific displayed results when switching countries.
+    st.session_state.pop("articles", None)
+    st.session_state.pop("country", None)
+    st.session_state.pop("digest", None)
+    st.session_state.pop("digest_country", None)
+    st.session_state.pop("digest_language", None)
+    st.session_state.pop("previous_digest", None)
+
 
 max_articles = st.slider(
     "Number of articles",
@@ -57,10 +96,18 @@ max_articles = st.slider(
     value=10,
 )
 
+
+# Summary language selection
 selected_language = st.selectbox(
     "Choose your news summary language",
-    get_supported_languages(),
-    index=0,
+    supported_languages,
+    index=supported_languages.index(preferred_language),
+    key="selected_language",
+)
+
+st.caption(
+    f"Preferred language for {country}: {preferred_language}. "
+    "You can choose another summary language."
 )
 
 
@@ -78,12 +125,18 @@ if st.button("Fetch Latest News", type="primary"):
             articles = process_articles(raw_articles)
 
             if not articles:
+
+                st.session_state.pop("articles", None)
+                st.session_state.pop("digest", None)
+
                 st.warning(
-                    "No articles were found. "
-                    "Please try again later."
+                    f"No articles were found for {country}. "
+                    "News sources may not yet be available "
+                    "for this country. Please try again later."
                 )
 
             else:
+
                 # Save articles to the database
                 saved_count = save_articles(articles)
 
@@ -100,6 +153,7 @@ if st.button("Fetch Latest News", type="primary"):
                 )
 
         except Exception as error:
+
             st.error(f"News retrieval failed: {error}")
 
 
@@ -107,6 +161,7 @@ if st.button("Fetch Latest News", type="primary"):
 if "articles" in st.session_state:
 
     articles = st.session_state["articles"]
+
     selected_country = st.session_state["country"]
 
     st.divider()
@@ -156,6 +211,7 @@ if "articles" in st.session_state:
         ):
 
             try:
+
                 digest = generate_news_digest(
                     articles,
                     selected_country,
@@ -171,14 +227,21 @@ if "articles" in st.session_state:
                 )
 
                 st.session_state["digest"] = digest
-                st.session_state["digest_country"] = selected_country
-                st.session_state["digest_language"] = selected_language
+
+                st.session_state["digest_country"] = (
+                    selected_country
+                )
+
+                st.session_state["digest_language"] = (
+                    selected_language
+                )
 
                 st.success(
                     "Your news digest was generated and saved."
                 )
 
             except Exception as error:
+
                 st.error(
                     f"AI summarization failed: {error}"
                 )
@@ -205,6 +268,7 @@ st.divider()
 with st.expander("View Previously Saved Articles"):
 
     try:
+
         saved_articles = get_articles(
             country,
             limit=50,
@@ -234,11 +298,13 @@ with st.expander("View Previously Saved Articles"):
                 st.divider()
 
         else:
+
             st.info(
                 "No saved articles are available for this country yet."
             )
 
     except Exception as error:
+
         st.error(
             f"Could not retrieve saved articles: {error}"
         )
@@ -250,6 +316,7 @@ st.subheader("📚 Previous News Digest")
 if st.button("Load Latest Saved Digest"):
 
     try:
+
         previous_digest = get_latest_digest(
             country,
             selected_language,
@@ -262,6 +329,7 @@ if st.button("Load Latest Saved Digest"):
             )
 
         else:
+
             st.session_state.pop("previous_digest", None)
 
             st.info(
@@ -270,6 +338,7 @@ if st.button("Load Latest Saved Digest"):
             )
 
     except Exception as error:
+
         st.error(
             f"Could not load the previous digest: {error}"
         )
@@ -310,7 +379,7 @@ if "previous_digest" in st.session_state:
 st.divider()
 
 st.caption(
-    "AI News Assistant | News sourced from configured "
-    "publishers. Always consult original articles for "
+    "AI News Assistant | News availability varies by country "
+    "and source. Always consult original articles for "
     "full reporting and context."
 )
