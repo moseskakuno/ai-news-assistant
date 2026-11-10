@@ -1,0 +1,8 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+# Local database files
+*.db
+*.sqlite3
