@@ -12,6 +12,7 @@ from ai_summarizer import (
 )
 
 from content_extractor import extract_article_content
+from pdf_generator import generate_digest_pdf
 
 from country_service import (
     get_countries,
@@ -382,12 +383,25 @@ if "articles" in st.session_state:
             st.session_state["digest"]
         )
 
-        st.download_button(
-            label="Download News Digest",
-            data=st.session_state["digest"],
-            file_name="daily_news_digest.md",
-            mime="text/markdown",
-        )
+        try:
+
+            pdf_data = generate_digest_pdf(
+                st.session_state["digest"],
+                st.session_state.get("digest_country", "News"),
+            )
+
+            st.download_button(
+                label="📄 Download News Digest (PDF)",
+                data=pdf_data,
+                file_name="daily_news_digest.pdf",
+                mime="application/pdf",
+            )
+
+        except Exception as error:
+
+            st.error(
+                f"Could not generate the PDF: {error}"
+            )
 
 
 # Previously saved articles
@@ -495,12 +509,25 @@ if "previous_digest" in st.session_state:
 
     st.markdown(previous_digest["content"])
 
-    st.download_button(
-        label="Download Previous Digest",
-        data=previous_digest["content"],
-        file_name="previous_news_digest.md",
-        mime="text/markdown",
-    )
+    try:
+
+        previous_pdf_data = generate_digest_pdf(
+            previous_digest["content"],
+            previous_digest["country"],
+        )
+
+        st.download_button(
+            label="📄 Download Previous Digest (PDF)",
+            data=previous_pdf_data,
+            file_name="previous_news_digest.pdf",
+            mime="application/pdf",
+        )
+
+    except Exception as error:
+
+        st.error(
+            f"Could not generate the previous digest PDF: {error}"
+        )
 
 
 # Footer

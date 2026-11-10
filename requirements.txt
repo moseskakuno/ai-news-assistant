@@ -1,4 +1,3 @@
-
 streamlit
 openai
 python-dotenv
@@ -7,3 +6,4 @@ feedparser
 beautifulsoup4
 pandas
 pycountry
+reportlab
