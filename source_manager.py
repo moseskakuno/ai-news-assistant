@@ -20,6 +20,1457 @@ NEWS_SOURCES = {
             "language": "English",
         }
     ],
+
+    "Malawi": [
+        {
+            "name": "The Nation",
+            "url": "https://mwnation.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Times 360 Malawi",
+            "url": "https://times.mw/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Nyasa Times",
+            "url": "https://www.nyasatimes.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Malawi24",
+            "url": "https://malawi24.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Maravi Express",
+            "url": "https://maraviexpress.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Malawi Voice",
+            "url": "https://malawivoice.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "The Maravi Post",
+            "url": "https://maravipost.com/feed/",
+            "language": "English",
+        }
+    ],
+        "Uganda": [
+        {
+            "name": "The Independent",
+            "url": "https://www.independent.co.ug/feed/",
+            "language": "English",
+        },
+        {
+            "name": "The Observer",
+            "url": "https://observer.ug/feed/",
+            "language": "English",
+        },
+        {
+            "name": "SoftPower News",
+            "url": "https://softpower.ug/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Watchdog Uganda",
+            "url": "https://www.watchdoguganda.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Nile Post",
+            "url": "https://nilepost.co.ug/feed/",
+            "language": "English",
+        }
+    ],
+            "Tanzania": [
+        {
+            "name": "Daily News",
+            "url": "https://dailynews.co.tz/feed/",
+            "language": "English",
+        },
+        {
+            "name": "The Chanzo",
+            "url": "https://thechanzo.com/feed/",
+            "language": "English",
+        }
+    ],
+                "Rwanda": [
+        {
+            "name": "KT Press",
+            "url": "https://www.ktpress.rw/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Taarifa Rwanda",
+            "url": "https://taarifa.rw/feed/",
+            "language": "English",
+        }
+    ],
+                    "Nigeria": [
+        {
+            "name": "Premium Times",
+            "url": "https://www.premiumtimesng.com/feed",
+            "language": "English",
+        },
+        {
+            "name": "Vanguard",
+            "url": "https://www.vanguardngr.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Punch",
+            "url": "https://punchng.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "BusinessDay",
+            "url": "https://businessday.ng/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Channels Television",
+            "url": "https://www.channelstv.com/feed/",
+            "language": "English",
+        }
+    ],
+                        "Ghana": [
+        {
+            "name": "MyJoyOnline",
+            "url": "https://www.myjoyonline.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "3News",
+            "url": "https://3news.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "The Ghana Report",
+            "url": "https://theghanareport.com/feed/",
+            "language": "English",
+        }
+    ],
+                            "South Africa": [
+        {
+            "name": "IOL",
+            "url": "https://www.iol.co.za/rss",
+            "language": "English",
+        },
+        {
+            "name": "SABC News",
+            "url": "https://www.sabcnews.com/sabcnews/feed/",
+            "language": "English",
+        }
+    ],
+                                "Egypt": [
+        {
+            "name": "Egypt Independent",
+            "url": "https://www.egyptindependent.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Daily News Egypt",
+            "url": "https://www.dailynewsegypt.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Mada Masr",
+            "url": "https://www.madamasr.com/en/feed/",
+            "language": "English",
+        }
+    ],
+                                    "Japan": [
+        {
+            "name": "NHK News",
+            "url": "https://www.nhk.or.jp/rss/news/cat0.xml",
+            "language": "Japanese",
+        },
+        {
+            "name": "Asahi Shimbun",
+            "url": "https://www.asahi.com/rss/asahi/newsheadlines.rdf",
+            "language": "Japanese",
+        },
+        {
+            "name": "Mainichi Shimbun",
+            "url": "https://mainichi.jp/rss/etc/mainichi-flash.rss",
+            "language": "Japanese",
+        },
+        {
+            "name": "The Japan Times",
+            "url": "https://www.japantimes.co.jp/feed/",
+            "language": "English",
+        }
+    ],
+                                        "France": [
+        {
+            "name": "Franceinfo",
+            "url": "https://www.franceinfo.fr/titres.rss",
+            "language": "French",
+        },
+        {
+            "name": "Le Monde",
+            "url": "https://www.lemonde.fr/rss/une.xml",
+            "language": "French",
+        },
+        {
+            "name": "Le Figaro",
+            "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+            "language": "French",
+        },
+        {
+            "name": "RFI France",
+            "url": "https://www.rfi.fr/fr/france/rss",
+            "language": "French",
+        },
+        {
+            "name": "Libération",
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss-all/?outputType=xml",
+            "language": "French",
+        },
+        {
+            "name": "Ouest-France",
+            "url": "https://www.ouest-france.fr/rss-en-continu.xml",
+            "language": "French",
+        },
+        {
+            "name": "Mediapart",
+            "url": "https://www.mediapart.fr/articles/feed",
+            "language": "French",
+        }
+    ],
+                                            "Brazil": [
+        {
+            "name": "G1",
+            "url": "https://g1.globo.com/rss/g1/",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Agência Brasil",
+            "url": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Folha de S.Paulo",
+            "url": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Jornal de Brasília",
+            "url": "https://jornaldebrasilia.com.br/feed/",
+            "language": "Portuguese",
+        }
+    ],
+                                                "India": [
+        {
+            "name": "The Hindu",
+            "url": "https://www.thehindu.com/feeder/default.rss",
+            "language": "English",
+        },
+        {
+            "name": "The Indian Express",
+            "url": "https://indianexpress.com/section/india/feed/",
+            "language": "English",
+        },
+        {
+            "name": "NDTV",
+            "url": "https://feeds.feedburner.com/ndtvnews-india-news",
+            "language": "English",
+        },
+        {
+            "name": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml",
+            "language": "English",
+        },
+        {
+            "name": "India Today",
+            "url": "https://www.indiatoday.in/rss/1206514",
+            "language": "English",
+        }
+    ],
+                                                    "Pakistan": [
+        {
+            "name": "Dawn",
+            "url": "https://www.dawn.com/feeds/home",
+            "language": "English",
+        },
+        {
+            "name": "The Express Tribune",
+            "url": "https://tribune.com.pk/feed/home",
+            "language": "English",
+        },
+        {
+            "name": "The Nation",
+            "url": "https://nation.com.pk/rss/top-stories",
+            "language": "English",
+        },
+        {
+            "name": "The News International",
+            "url": "https://www.thenews.com.pk/rss/1/1",
+            "language": "English",
+        },
+        {
+            "name": "Daily Jang",
+            "url": "https://jang.com.pk/rss/1/1",
+            "language": "Urdu",
+        },
+        {
+            "name": "UrduPoint",
+            "url": "https://www.urdupoint.com/rss/urdupoint.rss",
+            "language": "Urdu",
+        },
+        {
+            "name": "Express Urdu",
+            "url": "https://www.express.pk/feed/",
+            "language": "Urdu",
+        },
+    ],
+                                                        "Bangladesh": [
+        {
+            "name": "The Daily Star",
+            "url": "https://www.thedailystar.net/frontpage/rss.xml",
+            "language": "English",
+        },
+        {
+            "name": "Prothom Alo",
+            "url": "https://www.prothomalo.com/feed/",
+            "language": "Bengali",
+        },
+        {
+            "name": "Jago News 24",
+            "url": "https://www.jagonews24.com/rss/rss.xml",
+            "language": "Bengali",
+        },
+        {
+            "name": "BD24Live",
+            "url": "https://www.bd24live.com/feed",
+            "language": "English",
+        },
+    ],
+                                                            "Sri Lanka": [
+        {
+            "name": "News21 English",
+            "url": "https://www.news21.lk/english/rss/category/local-news",
+            "language": "English",
+        },
+        {
+            "name": "News21 Tamil",
+            "url": "https://www.news21.lk/rss/category/sri-lanka-tamil-news",
+            "language": "Tamil",
+        },
+        {
+            "name": "The Island",
+            "url": "https://island.lk/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Lanka Business Online",
+            "url": "https://www.lankabusinessonline.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Vikalpa",
+            "url": "https://www.vikalpa.org/feed",
+            "language": "Sinhala",
+        },
+        
+    ],
+                                                                "Nepal": [
+        {
+            "name": "The Kathmandu Post",
+            "url": "https://kathmandupost.com/rss",
+            "language": "English",
+        },
+        {
+            "name": "OnlineKhabar",
+            "url": "https://www.onlinekhabar.com/feed",
+            "language": "Nepali",
+        },
+        {
+            "name": "OnlineKhabar English",
+            "url": "https://english.onlinekhabar.com/feed",
+            "language": "English",
+        },
+        {
+            "name": "Setopati",
+            "url": "https://www.setopati.com/feed",
+            "language": "Nepali",
+        },
+        {
+            "name": "Nepali Times",
+            "url": "https://www.nepalitimes.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "The Rising Nepal",
+            "url": "https://risingnepaldaily.com/rss",
+            "language": "English",
+        },
+        {
+            "name": "Ratopati English",
+            "url": "https://english.ratopati.com/rss/",
+            "language": "English",
+        },
+    ],
+                                                                    "Bhutan": [
+        {
+            "name": "The Bhutanese",
+            "url": "https://thebhutanese.bt/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Bhutan Today",
+            "url": "https://www.bhutantoday.bt/feed/",
+            "language": "English",
+        },
+        {
+            "name": "The Druk Journal",
+            "url": "https://drukjournal.bt/feed/",
+            "language": "English",
+        },
+    ],
+                                                                        "Maldives": [
+        {
+            "name": "TNN English",
+            "url": "https://tnn.mv/en/rss/latest-posts",
+            "language": "English",
+        },
+        {
+            "name": "TNN Dhivehi",
+            "url": "https://tnn.mv/rss/latest-posts",
+            "language": "Dhivehi",
+        },
+        {
+            "name": "Maldives Now",
+            "url": "https://maldivesnow.net/section/maldives/rss.xml",
+            "language": "English",
+        },
+    ],
+                                                                        
+    "South Sudan": [
+        {
+            "name": "Eye Radio",
+            "url": "https://eyeradio.org/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Radio Tamazuj",
+            "url": "https://radiotamazuj.org/en/rss/news.xml",
+            "language": "English",
+        },
+        {
+            "name": "Sudans Post",
+            "url": "https://sudanspost.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Nyamilepedia",
+            "url": "https://nyamile.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Catholic Radio Network",
+            "url": "https://catholicradionetwork.org/feed/",
+            "language": "English",
+        },
+        {
+            "name": "South Sudan News Now",
+            "url": "https://ssnewsnow.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Hot in Juba",
+            "url": "https://hotinjuba.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Talk of Juba",
+            "url": "https://talkofjuba.com/feed/",
+            "language": "English",
+        },
+    ],
+    
+    "Romania": [
+        {
+            "name": "Digi24",
+            "url": "https://www.digi24.ro/rss",
+            "language": "Romanian",
+        },
+        {
+            "name": "HotNews",
+            "url": "https://www.hotnews.ro/rss",
+            "language": "Romanian",
+        },
+        {
+            "name": "G4Media",
+            "url": "https://www.g4media.ro/feed/",
+            "language": "Romanian",
+        },
+        {
+            "name": "News.ro",
+            "url": "https://www.news.ro/rss",
+            "language": "Romanian",
+        },
+        {
+            "name": "Ziarul Financiar",
+            "url": "https://www.zf.ro/rss",
+            "language": "Romanian",
+        },
+        {
+            "name": "Profit.ro",
+            "url": "https://www.profit.ro/rss",
+            "language": "Romanian",
+        },
+        {
+            "name": "Știrile ProTV",
+            "url": "https://stirileprotv.ro/rss",
+            "language": "Romanian",
+        },
+    ],
+        "Burkina Faso": [
+        {
+            "name": "Sidwaya",
+            "url": "https://www.sidwaya.info/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Burkina24",
+            "url": "https://burkina24.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "leFaso.net",
+            "url": "https://lefaso.net/spip.php?page=backend",
+            "language": "French",
+        },
+        {
+            "name": "Journal du Faso",
+            "url": "https://journaldufaso.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "L'Express du Faso",
+            "url": "https://www.lexpressdufaso-bf.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Le Pays",
+            "url": "https://lepays.bf/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Fasozine",
+            "url": "https://fasozine.com/feed/",
+            "language": "French",
+        },
+    ],
+            "Sudan": [
+        {
+            "name": "Radio Dabanga",
+            "url": "https://www.dabangasudan.org/en/feed",
+            "language": "English",
+        },
+        {
+            "name": "Al Tagyeer",
+            "url": "https://altaghyeer.info/en/feed",
+            "language": "English",
+        },
+        {
+            "name": "Sudanese Net",
+            "url": "https://sudaninet.net/feed",
+            "language": "Arabic",
+        },
+        {
+            "name": "Sudanile",
+            "url": "https://sudanile.com/feed",
+            "language": "Arabic",
+        },
+    ],
+                "Paraguay": [
+        {
+            "name": "ABC Color",
+            "url": "https://www.abc.com.py/arc/outboundfeeds/rss/noticias-del-dia/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Nacional",
+            "url": "https://www.elnacional.com.py/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Diario Popular",
+            "url": "https://www.popular.com.py/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Noticias CDE",
+            "url": "https://www.noticiascde.com.py/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "The Paraguay Post",
+            "url": "https://theparaguaypost.com/feed/",
+            "language": "English",
+        },
+    ],
+                    "Chile": [
+        {
+            "name": "BioBioChile",
+            "url": "https://feeds.feedburner.com/radiobiobio/NNeJ",
+            "language": "Spanish",
+        },
+        {
+            "name": "The Clinic",
+            "url": "https://www.theclinic.cl/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Diario Financiero",
+            "url": "https://www.df.cl/noticias/site/list/port/rss.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Publimetro",
+            "url": "https://www.publimetro.cl/arc/outboundfeeds/rss/?outputType=xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Siglo",
+            "url": "https://elsiglo.cl/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "La Nación",
+            "url": "https://www.lanacion.cl/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Cooperativa",
+            "url": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "CIPER Chile",
+            "url": "https://www.ciperchile.cl/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Ex-Ante",
+            "url": "https://www.ex-ante.cl/feed/",
+            "language": "Spanish",
+        },
+    ],
+                        "Argentina": [
+        {
+            "name": "La Nación",
+            "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Página/12",
+            "url": "https://www.pagina12.com.ar/arc/outboundfeeds/rss/portada",
+            "language": "Spanish",
+        },
+        {
+            "name": "Ámbito Financiero",
+            "url": "https://www.ambito.com/rss/pages/ultimas-noticias.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Economista",
+            "url": "https://eleconomista.com.ar/ultimas-noticias/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "iProfesional",
+            "url": "https://www.iprofesional.com/rss/home",
+            "language": "Spanish",
+        },
+        {
+            "name": "Buenos Aires Times",
+            "url": "https://www.batimes.com.ar/feed",
+            "language": "English",
+        },
+        {
+            "name": "Perfil",
+            "url": "https://www.perfil.com/feed",
+            "language": "Spanish",
+        },
+    ],
+                            "Colombia": [
+        {
+            "name": "El Tiempo",
+            "url": "https://www.eltiempo.com/rss/colombia.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Espectador",
+            "url": "https://www.elespectador.com/arc/outboundfeeds/discover/?outputType=xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "La República",
+            "url": "https://www.larepublica.co/rss",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Nuevo Siglo",
+            "url": "https://www.elnuevosiglo.com.co/rss.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Colombia Reports",
+            "url": "https://colombiareports.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "The City Paper Bogotá",
+            "url": "https://thecitypaperbogota.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "El Diario",
+            "url": "https://www.eldiario.com.co/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Portafolio - Economy",
+            "url": "https://www.portafolio.co/rss/economia.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Portafolio - Business",
+            "url": "https://www.portafolio.co/rss/negocios.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Colombiano",
+            "url": "https://www.elcolombiano.com/rss/inicio.xml",
+            "language": "Spanish",
+        },
+    ],
+                                "Peru": [
+        {
+            "name": "El Comercio",
+            "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "RPP Noticias",
+            "url": "https://rpp.pe/rss",
+            "language": "Spanish",
+        },
+        {
+            "name": "La República",
+            "url": "https://larepublica.pe/rss/home.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Agencia Andina",
+            "url": "https://andina.pe/agencia/rss/noticia.xml",
+            "language": "Spanish",
+        },
+    ],
+                                    "Ecuador": [
+        {
+            "name": "El Universo",
+            "url": "https://www.eluniverso.com/arc/outboundfeeds/rss/?outputType=xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "La República Ecuador",
+            "url": "https://www.larepublica.ec/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Mercurio",
+            "url": "https://elmercurio.com.ec/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Heraldo",
+            "url": "https://www.elheraldo.com.ec/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Norte",
+            "url": "https://elnorte.ec/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Crónica",
+            "url": "https://cronica.com.ec/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Manabí Noticias",
+            "url": "https://manabinoticias.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Qué Noticias",
+            "url": "https://quenoticias.com/feed/",
+            "language": "Spanish",
+        },
+    ],
+                                        "Bolivia": [
+        {
+            "name": "Opinión Bolivia",
+            "url": "https://www.opinion.com.bo/rss/",
+            "language": "Spanish",
+        },
+        {
+            "name": "La Patria",
+            "url": "https://lapatria.bo/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "La Época",
+            "url": "https://www.la-epoca.com.bo/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Visión 360",
+            "url": "https://www.vision360.bo/rss/noticias/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Red Uno",
+            "url": "https://www.reduno.com.bo/rss",
+            "language": "Spanish",
+        },
+    ],
+                                            "Uruguay": [
+        {
+            "name": "Montevideo Portal",
+            "url": "https://www.montevideo.com.uy/anxml.aspx?59",
+            "language": "Spanish",
+        },
+        {
+            "name": "La Diaria",
+            "url": "https://ladiaria.com.uy/feeds/articulos/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Observador",
+            "url": "https://www.elobservador.com.uy/rss/pages/home.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Subrayado",
+            "url": "https://www.subrayado.com.uy/rss/pages/home.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Brecha",
+            "url": "https://brecha.com.uy/feed/",
+            "language": "Spanish",
+        },
+     
+    ],
+                                            
+    "Mexico": [
+        {
+            "name": "Reforma",
+            "url": "https://www.reforma.com/rss/portada.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "La Jornada",
+            "url": "https://www.jornada.com.mx/rss/edicion.xml?v=1",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Financiero",
+            "url": "https://www.elfinanciero.com.mx/arc/outboundfeeds/rss/?outputType=xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Vanguardia MX",
+            "url": "https://vanguardia.com.mx/rss.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Informador",
+            "url": "https://www.informador.mx/rss/ultimas-noticias.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "24 Horas",
+            "url": "https://www.24-horas.mx/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Sol de México",
+            "url": "https://www.elsoldemexico.com.mx/rss.xml",
+            "language": "Spanish",
+        },
+    ],
+    
+    "Costa Rica": [
+        {
+            "name": "La Nación",
+            "url": "https://www.nacion.com/arc/outboundfeeds/rss/?outputType=xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Delfino.cr",
+            "url": "https://delfino.cr/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Semanario Universidad",
+            "url": "https://semanariouniversidad.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Diario Extra",
+            "url": "https://www.diarioextra.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Mundo CR",
+            "url": "https://www.elmundo.cr/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Observador",
+            "url": "https://observador.cr/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Monumental",
+            "url": "https://www.monumental.co.cr/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Tico Times",
+            "url": "https://ticotimes.net/feed",
+            "language": "English",
+        },
+    ],
+    
+    "Panama": [
+        {
+            "name": "Newsroom Panama",
+            "url": "https://newsroompanama.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Telemetro - Latest News",
+            "url": "https://www.telemetro.com/rss/pages/ultimas-noticias.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Telemetro - National News",
+            "url": "https://www.telemetro.com/rss/pages/nacionales.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Telemetro - Economy",
+            "url": "https://www.telemetro.com/rss/pages/economia.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "TVN Noticias - Main",
+            "url": "https://www.tvn-2.com/rss/",
+            "language": "Spanish",
+        },
+        {
+            "name": "TVN Noticias - National",
+            "url": "https://www.tvn-2.com/rss/nacionales/",
+            "language": "Spanish",
+        },
+        {
+            "name": "TVN Noticias - Economy",
+            "url": "https://www.tvn-2.com/rss/economia/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Panamá América",
+            "url": "https://www.panamaamerica.com.pa/rss.xml",
+            "language": "Spanish",
+        },
+    ],
+    
+    "Guatemala": [
+        {
+            "name": "Prensa Libre",
+            "url": "https://www.prensalibre.com/guatemala/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "La Hora",
+            "url": "https://lahora.gt/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Emisoras Unidas",
+            "url": "https://emisorasunidas.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Guatemala.com",
+            "url": "https://guatemala.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "PublicoGT",
+            "url": "https://publicogt.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Plaza Pública",
+            "url": "https://www.plazapublica.com.gt/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Perspectiva",
+            "url": "https://www.perspectiva.gt/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "República",
+            "url": "https://republica.com/feed/",
+            "language": "Spanish",
+        },
+    ],
+
+    "Honduras": [
+        {
+            "name": "Proceso Digital",
+            "url": "https://proceso.hn/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Hondudiario",
+            "url": "https://hondudiario.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Radio HRN - National",
+            "url": "https://www.radiohrn.hn/rss/nacionales.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Radio HRN - Economy",
+            "url": "https://www.radiohrn.hn/rss/negocios-y-finanzas.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Tu Nota - Honduras",
+            "url": "https://www.tunota.com/rss/honduras-hoy.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Tu Nota - Politics",
+            "url": "https://www.tunota.com/rss/politica.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "Tu Nota - Economy",
+            "url": "https://www.tunota.com/rss/economia.xml",
+            "language": "Spanish",
+        },
+    ],
+
+    "El Salvador": [
+        {
+            "name": "Diario Libre SV",
+            "url": "https://diariolibresv.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Salvador Times",
+            "url": "https://elsalvadortimes.com/rss",
+            "language": "Spanish",
+        },
+        {
+            "name": "Periódico Equilibrium",
+            "url": "https://periodicoequilibrium.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "La Página",
+            "url": "https://lapagina.com.sv/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Última Hora SV",
+            "url": "https://ultimahora.sv/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El País",
+            "url": "https://elpais.com.sv/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Metropolitano Digital",
+            "url": "https://elmetropolitanodigital.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "elsalvador.com",
+            "url": "https://www.elsalvador.com/category/noticias/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Diario Co Latino",
+            "url": "https://www.diariocolatino.com/feed/",
+            "language": "Spanish",
+        },
+    ],
+
+    "Nicaragua": [
+        {
+            "name": "Canal 2",
+            "url": "https://canal2tv.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Nicaragua Investiga",
+            "url": "https://nicaraguainvestiga.com/feed/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Despacho 505",
+            "url": "https://www.despacho505.com/feed/",
+            "language": "Spanish",
+        },
+    ],
+
+    "Belize": [
+        {
+            "name": "Amandala",
+            "url": "https://amandala.com.bz/news/feed/",
+            "language": "English",
+        },
+        {
+            "name": "News 5 Belize",
+            "url": "https://www.greaterbelize.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Breaking Belize News",
+            "url": "https://www.breakingbelizenews.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Ambergris Today",
+            "url": "https://ambergristoday.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "The San Pedro Sun",
+            "url": "https://www.sanpedrosun.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Love FM",
+            "url": "https://lovefm.com/feed/",
+            "language": "English",
+        },
+    ],
+
+    "Jamaica": [
+        {
+            "name": "Jamaica Observer",
+            "url": "https://www.jamaicaobserver.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Jamaica Gleaner",
+            "url": "https://www.jamaica-gleaner.com/feed/news.xml",
+            "language": "English",
+        },
+        {
+            "name": "Nationwide News",
+            "url": "https://nationwideradiojm.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Jamaica Information Service",
+            "url": "https://jis.gov.jm/feed/",
+            "language": "English",
+        },
+        {
+            "name": "McKoysNews",
+            "url": "https://mckoysnews.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Jamaicans.com",
+            "url": "https://jamaicans.com/feed/",
+            "language": "English",
+        },
+    ],
+
+    "Trinidad and Tobago": [
+        {
+            "name": "CNC3",
+            "url": "https://www.cnc3.co.tt/feed/",
+            "language": "English",
+        },
+        {
+            "name": "TTT News",
+            "url": "https://www.ttt.live/feed/",
+            "language": "English",
+        },
+    ],
+
+    "Barbados": [
+        {
+            "name": "CBC Barbados",
+            "url": "https://www.cbc.bb/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Starcom Network",
+            "url": "https://starcomnetwork.net/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Barbados Underground",
+            "url": "https://barbadosunderground.net/feed/",
+            "language": "English",
+        },
+    ],
+
+    "Australia": [
+        {
+            "name": "The Guardian Australia",
+            "url": "https://www.theguardian.com/australia-news/rss",
+            "language": "English",
+        },
+        {
+            "name": "The Sydney Morning Herald",
+            "url": "https://www.smh.com.au/rss/feed.xml",
+            "language": "English",
+        },
+        {
+            "name": "SBS News",
+            "url": "https://www.sbs.com.au/news/feed",
+            "language": "English",
+        },
+    ],
+
+    "United States": [
+        {
+            "name": "The New York Times",
+            "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
+            "language": "English",
+        },
+        {
+            "name": "NPR",
+            "url": "https://feeds.npr.org/1003/rss.xml",
+            "language": "English",
+        },
+        {
+            "name": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/feeds/rss/nation",
+            "language": "English",
+        },
+        {
+            "name": "ABC News",
+            "url": "https://abcnews.go.com/abcnews/usheadlines",
+            "language": "English",
+        },
+        {
+            "name": "CBS News",
+            "url": "https://www.cbsnews.com/latest/rss/main",
+            "language": "English",
+        },
+        {
+            "name": "NBC News",
+            "url": "https://feeds.nbcnews.com/nbcnews/public/news",
+            "language": "English",
+        },
+    ],
+
+    "Canada": [
+        {
+            "name": "CBC News",
+            "url": "https://rss.cbc.ca/lineup/canada.xml",
+            "language": "English",
+        },
+        {
+            "name": "Global News",
+            "url": "https://globalnews.ca/feed/",
+            "language": "English",
+        },
+        {
+            "name": "La Presse",
+            "url": "https://www.lapresse.ca/actualites/rss",
+            "language": "French",
+        },
+    ],
+
+    "New Zealand": [
+        {
+            "name": "RNZ",
+            "url": "https://www.rnz.co.nz/rss/national.xml",
+            "language": "English",
+        },
+        {
+            "name": "Newstalk ZB",
+            "url": "https://www.newstalkzb.co.nz/rss/",
+            "language": "English",
+        },
+        {
+            "name": "Newsroom",
+            "url": "https://newsroom.co.nz/feed/",
+            "language": "English",
+        },
+    ],
+
+    "Ireland": [
+        {
+            "name": "RTÉ News",
+            "url": "https://www.rte.ie/feeds/rss/?index=/news/",
+            "language": "English",
+        },
+        {
+            "name": "The Irish Times",
+            "url": "https://www.irishtimes.com/rss/the-irish-times-news-1.1319192",
+            "language": "English",
+        },
+        {
+            "name": "TheJournal.ie",
+            "url": "https://www.thejournal.ie/feed/",
+            "language": "English",
+        },
+        {
+            "name": "BreakingNews.ie",
+            "url": "https://feeds.breakingnews.ie/bntopstories",
+            "language": "English",
+        },
+        {
+            "name": "Irish Independent",
+            "url": "https://www.independent.ie/irish-news/rss",
+            "language": "English",
+        },
+    ],
+
+    "Spain": [
+        {
+            "name": "EL PAÍS",
+            "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+            "language": "Spanish",
+        },
+        {
+            "name": "El Mundo",
+            "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "La Vanguardia",
+            "url": "https://www.lavanguardia.com/rss/home.xml",
+            "language": "Spanish",
+        },
+        {
+            "name": "elDiario.es",
+            "url": "https://www.eldiario.es/rss/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Europa Press",
+            "url": "https://www.europapress.es/rss/rss.aspx",
+            "language": "Spanish",
+        },
+    ],
+
+    "Portugal": [
+        {
+            "name": "RTP Notícias",
+            "url": "https://www.rtp.pt/noticias/rss",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Expresso",
+            "url": "https://rss.impresa.pt/feed/latest/expresso.rss?type=ARTICLE,VIDEO,GALLERY,STREAM,PLAYLIST,EVENT,NEWSLETTER&limit=20&pubsubhub=true",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Público",
+            "url": "https://feeds.feedburner.com/PublicoRSS",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Observador",
+            "url": "https://observador.pt/rss/",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Diário de Notícias",
+            "url": "https://www.dn.pt/stories.rss",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Notícias ao Minuto",
+            "url": "https://www.noticiasaominuto.com/rss/ultima-hora",
+            "language": "Portuguese",
+        },
+    ],
+
+    "Italy": [
+        {
+            "name": "ANSA",
+            "url": "https://www.ansa.it/sito/ansait_rss.xml",
+            "language": "Italian",
+        },
+        {
+            "name": "la Repubblica",
+            "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
+            "language": "Italian",
+        },
+        {
+            "name": "Corriere della Sera",
+            "url": "https://www.corriere.it/rss/homepage.xml",
+            "language": "Italian",
+        },
+        {
+            "name": "Il Fatto Quotidiano",
+            "url": "https://www.ilfattoquotidiano.it/feed/",
+            "language": "Italian",
+        },
+    ],
+
+    "Netherlands": [
+        {
+            "name": "NOS Nieuws",
+            "url": "https://feeds.nos.nl/nosnieuwsalgemeen",
+            "language": "Dutch",
+        },
+        {
+            "name": "NU.nl",
+            "url": "https://www.nu.nl/rss/Algemeen",
+            "language": "Dutch",
+        },
+        {
+            "name": "NRC",
+            "url": "https://www.nrc.nl/rss/",
+            "language": "Dutch",
+        },
+        {
+            "name": "AD",
+            "url": "https://www.ad.nl/home/rss.xml",
+            "language": "Dutch",
+        },
+        {
+            "name": "De Telegraaf",
+            "url": "https://www.telegraaf.nl/rss",
+            "language": "Dutch",
+        },
+        {
+            "name": "Trouw",
+            "url": "https://www.trouw.nl/voorpagina/rss.xml",
+            "language": "Dutch",
+        },
+    ],
+
 }
 
 

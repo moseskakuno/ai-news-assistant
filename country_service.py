@@ -230,6 +230,11 @@ COUNTRY_LANGUAGES = {
         "hl": "uk-UA",
         "ceid_language": "uk",
     },
+        "BB": {
+        "hl": "en-GB",
+        "gl": "BB",
+        "ceid": "BB:en",
+    },
 }
 
 

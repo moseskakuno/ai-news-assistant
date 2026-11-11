@@ -47,13 +47,16 @@ def fetch_rss_feed(url, country, source_name, language):
         if not article_url:
             continue
 
-        publisher = entry.get("source", {}).get(
-            "title",
-            source_name,
+        # Always use the configured publisher name.
+        publisher = source_name
+
+        # Remove HTML markup from article titles.
+        title = clean_html(
+            entry.get("title", "Untitled")
         )
 
         article = {
-            "title": entry.get("title", "Untitled"),
+            "title": title or "Untitled",
             "url": article_url,
             "source": publisher,
             "published_at": entry.get(
