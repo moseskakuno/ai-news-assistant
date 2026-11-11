@@ -698,6 +698,16 @@ NEWS_SOURCES = {
             "url": "https://www.perfil.com/feed",
             "language": "Spanish",
         },
+                {
+            "name": "Clarín",
+            "url": "https://www.clarin.com/rss/lo-ultimo/",
+            "language": "Spanish",
+        },
+        {
+            "name": "Infobae",
+            "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
+            "language": "Spanish",
+        },
     ],
                             "Colombia": [
         {
@@ -1470,6 +1480,353 @@ NEWS_SOURCES = {
             "language": "Dutch",
         },
     ],
+    
+    "Belgium": [
+        {
+            "name": "VRT NWS",
+            "url": "https://www.vrt.be/vrtnieuws/nl.rss.articles.xml",
+            "language": "Dutch",
+        },
+        {
+            "name": "HLN",
+            "url": "https://www.hln.be/home/rss.xml",
+            "language": "Dutch",
+        },
+        {
+            "name": "De Morgen",
+            "url": "https://www.demorgen.be/in-het-nieuws/rss.xml",
+            "language": "Dutch",
+        },
+        {
+            "name": "De Standaard",
+            "url": "https://www.standaard.be/binnenland/rss",
+            "language": "Dutch",
+        },
+        {
+            "name": "RTBF Info",
+            "url": "https://rss.rtbf.be/article/rss/highlight_rtbf_info.xml?source=internal",
+            "language": "French",
+        },
+        {
+            "name": "La Libre Belgique",
+            "url": "https://www.lalibre.be/arc/outboundfeeds/rss/section/belgique/?outputType=xml",
+            "language": "French",
+        },
+    ],
+
+    "Austria": [
+        {
+            "name": "ORF News",
+            "url": "https://rss.orf.at/news.xml",
+            "language": "German",
+        },
+        {
+            "name": "Der Standard",
+            "url": "https://www.derstandard.at/rss",
+            "language": "German",
+        },
+        {
+            "name": "Die Presse",
+            "url": "https://www.diepresse.com/rss",
+            "language": "German",
+        },
+        {
+            "name": "Kurier",
+            "url": "https://kurier.at/xml/rssd",
+            "language": "German",
+        },
+    ],
+    "Afghanistan": [
+        {
+            "name": "Khaama Press",
+            "url": "https://www.khaama.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Ariana News",
+            "url": "https://www.ariananews.af/feed/",
+            "language": "English",
+        },
+    ],
+        "Albania": [
+        {
+            "name": "Euronews Albania",
+            "url": "https://euronews.al/feed/",
+            "language": "Albanian",
+        },
+        {
+            "name": "BalkanWeb",
+            "url": "https://www.balkanweb.com/feed/",
+            "language": "Albanian",
+        },
+    ],
+            "Algeria": [
+        {
+            "name": "TSA Algerie",
+            "url": "https://www.tsa-algerie.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Algerie360",
+            "url": "https://www.algerie360.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Echorouk",
+            "url": "https://www.echoroukonline.com/feed",
+            "language": "Arabic",
+        },
+    ],
+                "Andorra": [
+        {
+            "name": "BonDia",
+            "url": "https://www.bondia.ad/rss.xml",
+            "language": "Catalan",
+        },
+    ],
+                    "Angola": [
+        {
+            "name": "Correio da Kianda",
+            "url": "https://correiokianda.info/feed/",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Notícias de Angola",
+            "url": "https://noticiasdeangola.co.ao/feed/",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Folha 8",
+            "url": "https://jornalf8.net/feed/",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Portal de Angola",
+            "url": "https://portaldeangola.com/feed/",
+            "language": "Portuguese",
+        },
+    ],
+            "Antigua and Barbuda": [
+        {
+            "name": "The Daily Observer",
+            "url": "https://antiguaobserver.com/feed/",
+            "language": "English",
+        },
+    ],
+        "Armenia": [
+        {
+            "name": "News.am",
+            "url": "https://news.am/eng/rss/",
+            "language": "English",
+        },
+        {
+            "name": "Hetq",
+            "url": "https://hetq.am/en/rss",
+            "language": "English",
+        },
+        {
+            "name": "OC Media",
+            "url": "https://oc-media.org/feed/",
+            "language": "English",
+        },
+    ],
+            "Aruba": [
+        {
+            "name": "Solo di Pueblo",
+            "url": "https://solodipueblo.com/feed/",
+            "language": "Papiamento",
+        },
+        {
+            "name": "24ora",
+            "url": "https://24ora.com/feed/",
+            "language": "Papiamento",
+        },
+    ],
+                "Azerbaijan": [
+        {
+            "name": "AzerNews",
+            "url": "https://www.azernews.az/feed.php",
+            "language": "English",
+        },
+        {
+            "name": "Oxu.az",
+            "url": "https://oxu.az/feed",
+            "language": "Azerbaijani",
+        },
+        {
+            "name": "Day.az",
+            "url": "https://news.day.az/rss/all.rss",
+            "language": "Russian",
+        },
+        {
+            "name": "Trend News Agency",
+            "url": "https://www.trend.az/feeds/index.rss",
+            "language": "English",
+        },
+        {
+            "name": "SIA.az",
+            "url": "https://sia.az/feed.php",
+            "language": "Azerbaijani",
+        },
+    ],
+                "Bahamas": [
+    {
+        "name": "Bahamas Press",
+        "url": "https://www.bahamaspress.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "ZNS Bahamas",
+        "url": "https://znsbahamas.com/feed/",
+        "language": "English",
+    },
+],
+"Bahrain": [
+    {
+        "name": "Biz Bahrain",
+        "url": "https://www.bizbahrain.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Voice of Bahrain",
+        "url": "https://www.vob.org/?feed=rss2",
+        "language": "Arabic",
+    },
+    {
+        "name": "Bahrain Mirror",
+        "url": "https://bahrainmirror.com/rss.xml",
+        "language": "Arabic",
+    },
+    {
+        "name": "Bahrain This Week",
+        "url": "https://www.bahrainthisweek.com/feed/",
+        "language": "English",
+    },
+],
+"Bangladesh": [
+    {
+        "name": "The Daily Star",
+        "url": "https://www.thedailystar.net/taxonomy/term/107/rss.xml",
+        "language": "English",
+    },
+    {
+        "name": "BD24Live",
+        "url": "https://www.bd24live.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Jago News24",
+        "url": "https://www.jagonews24.com/rss/rss.xml",
+        "language": "Bengali",
+    },
+    {
+        "name": "Prothom Alo",
+        "url": "https://www.prothomalo.com/stories.rss",
+        "language": "Bengali",
+    },
+],
+"Belarus": [
+    {
+        "name": "BelTA",
+        "url": "https://belta.by/rss/",
+        "language": "Russian",
+    },
+    {
+        "name": "Zerkalo",
+        "url": "https://news.zerkalo.io/rss/all.rss",
+        "language": "Russian",
+    },
+    {
+        "name": "The Minsk Herald",
+        "url": "https://minskherald.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Hrodna.life",
+        "url": "https://hrodna.life/feed/",
+        "language": "Belarusian",
+    },
+],
+"American Samoa": [
+    {
+        "name": "Talanei",
+        "url": "https://www.talanei.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Samoa News",
+        "url": "https://www.samoanews.com/rss.xml",
+        "language": "Samoan",
+    },
+],
+"Anguilla": [
+    {
+        "name": "The Anguillian",
+        "url": "http://theanguillian.com/category/news/local-news/feed",
+        "language": "English",
+    },
+    {
+        "name": "Anguilla Focus",
+        "url": "https://anguillafocus.com/?feed=rss2",
+        "language": "English",
+    },
+],
+"Benin": [
+    {
+        "name": "Bénin Web TV",
+        "url": "https://beninwebtv.bj/pays/afrique/afrique-de-louest/benin/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Bénin Intelligent",
+        "url": "https://beninintelligent.bj/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Banouto",
+        "url": "https://www.banouto.bj/rss-actualites",
+        "language": "French",
+    },
+    {
+        "name": "Le Matinal",
+        "url": "https://lematinal.bj/feed/",
+        "language": "French",
+    },
+],
+"Bermuda": [
+    {
+        "name": "Bernews",
+        "url": "https://bernews.com/feed/",
+        "language": "English",
+    },
+],
+"Bosnia and Herzegovina": [
+    {
+        "name": "Klix.ba",
+        "url": "https://www.klix.ba/rss",
+        "language": "Bosnian",
+    },
+    {
+        "name": "N1 BiH",
+        "url": "https://n1info.ba/feed/",
+        "language": "Bosnian",
+    },
+    {
+        "name": "Radio Sarajevo",
+        "url": "https://radiosarajevo.ba/rss",
+        "language": "Bosnian",
+    },
+    {
+        "name": "Buka",
+        "url": "https://www.6yka.com/feed",
+        "language": "Bosnian",
+    },
+    {
+        "name": "Detektor",
+        "url": "https://detektor.ba/feed/",
+        "language": "Bosnian",
+    },
+],
 
 }
 

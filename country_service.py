@@ -32,6 +32,8 @@ COUNTRY_LANGUAGES = {
     "KR": {"language": "Korean", "hl": "ko-KR", "ceid_language": "ko"},
     "SA": {"language": "Arabic", "hl": "ar-SA", "ceid_language": "ar"},
     "EG": {"language": "Arabic", "hl": "ar-EG", "ceid_language": "ar"},
+        # Algeria
+    "DZ": {"language": "French", "hl": "fr-FR", "gl": "DZ", "ceid_language": "fr",},
     "NG": {"language": "English", "hl": "en-NG", "ceid_language": "en"},
     "GH": {"language": "English", "hl": "en-GH", "ceid_language": "en"},
     "IE": {"language": "English", "hl": "en-IE", "ceid_language": "en"},
@@ -39,6 +41,48 @@ COUNTRY_LANGUAGES = {
     "PH": {"language": "English", "hl": "en-PH", "ceid_language": "en"},
     "PK": {"language": "English", "hl": "en-PK", "ceid_language": "en"},
     "BD": {"language": "Bengali", "hl": "bn-BD", "ceid_language": "bn"},
+    # Belarus
+"BY": {
+    "language": "Russian",
+    "hl": "ru-BY",
+    "gl": "BY",
+    "ceid_language": "ru",
+},
+# American Samoa
+"AS": {
+    "language": "English",
+    "hl": "en-AS",
+    "gl": "AS",
+    "ceid_language": "en",
+},
+# Anguilla
+"AI": {
+    "language": "English",
+    "hl": "en-AI",
+    "gl": "AI",
+    "ceid_language": "en",
+},
+# Benin
+"BJ": {
+    "language": "French",
+    "hl": "fr-BJ",
+    "gl": "BJ",
+    "ceid_language": "fr",
+},
+# Bermuda
+"BM": {
+    "language": "English",
+    "hl": "en-BM",
+    "gl": "BM",
+    "ceid_language": "en",
+},
+# Bosnia and Herzegovina
+"BA": {
+    "language": "Bosnian",
+    "hl": "bs-BA",
+    "gl": "BA",
+    "ceid_language": "bs",
+},
     "TH": {"language": "Thai", "hl": "th-TH", "ceid_language": "th"},
     "VN": {"language": "Vietnamese", "hl": "vi-VN", "ceid_language": "vi"},
     "ID": {"language": "Indonesian", "hl": "id-ID", "ceid_language": "id"},
@@ -50,6 +94,53 @@ COUNTRY_LANGUAGES = {
     "DK": {"language": "Danish", "hl": "da-DK", "ceid_language": "da"},
     "FI": {"language": "Finnish", "hl": "fi-FI", "ceid_language": "fi"},
     "UA": {"language": "Ukrainian", "hl": "uk-UA", "ceid_language": "uk"},
+    # Aruba
+"AW": {
+    "language": "Papiamento",
+    "hl": "pap-AW",
+    "gl": "AW",
+    "ceid_language": "en",
+},
+# Azerbaijan
+"AZ": {
+    "language": "Azerbaijani",
+    "hl": "az-AZ",
+    "gl": "AZ",
+    "ceid_language": "az",
+},
+        # Angola
+    "AO": {"language": "Portuguese","hl": "pt-AO","gl": "AO","ceid_language": "pt-PT",
+    },
+    # Armenia
+"AM": {
+    "language": "English",
+    "hl": "en-AM",
+    "gl": "AM",
+    "ceid_language": "en",
+},
+        # Antigua and Barbuda
+    "AG": {
+        "language": "English",
+        "hl": "en-AG",
+        "gl": "AG",
+        "ceid_language": "en",
+    },
+
+    # Albania
+    "AL": {
+        "language": "Albanian",
+        "hl": "sq-AL",
+        "gl": "AL",
+        "ceid_language": "sq",
+    },
+
+    # Afghanistan
+    "AF": {
+        "language": "English",
+        "hl": "en-US",
+        "gl": "AF",
+        "ceid_language": "en",
+    },
 
     # Barbados
     "BB": {
@@ -70,6 +161,9 @@ COUNTRY_LANGUAGES = {
     # Caribbean
     "JM": {"language": "English", "hl": "en-JM", "ceid_language": "en"},
     "TT": {"language": "English", "hl": "en-TT", "ceid_language": "en"},
+        # Andorra
+    "AD": {"language": "Catalan","hl": "ca-AD","gl": "AD","ceid_language": "ca",
+    },
 
     # South America
     "PY": {"language": "Spanish", "hl": "es-PY", "ceid_language": "es"},

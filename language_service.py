@@ -10,6 +10,14 @@ SUPPORTED_LANGUAGES = {
     "Japanese": "Japanese",
     "Dhivehi": "Dhivehi",
     "Chinese": "Simplified Chinese",
+    "Albanian": "Albanian",
+    "Catalan": "Catalan",
+    "Papiamento": "Papiamento",
+    "Azerbaijani": "Azerbaijani",
+    "Bengali": "Bengali",
+    "Belarusian": "Belarusian",
+    "Samoan": "Samoan",
+    "Bosnian": "Bosnian",
 }
 
 
