@@ -4,6 +4,7 @@ import feedparser
 
 from bs4 import BeautifulSoup
 from urllib.parse import urlencode
+from collections import Counter
 
 from source_manager import get_sources
 from country_service import get_country_language
@@ -24,19 +25,32 @@ def clean_html(content):
 def fetch_rss_feed(url, country, source_name, language):
     """Retrieve and normalize articles from an RSS feed."""
 
+    print(f"[RSS] Requesting {source_name}: {url}")
+
     headers = {
-        "User-Agent": "AI-News-Assistant/1.0"
+        "User-Agent": "Mozilla/5.0 (compatible; AI-News-Assistant/1.0)"
     }
 
     response = requests.get(
         url,
         headers=headers,
-        timeout=20,
+        timeout=45,
     )
 
     response.raise_for_status()
 
+    print(
+        f"[RSS] {source_name}: HTTP {response.status_code}, "
+        f"{len(response.content)} bytes received."
+    )
+
     feed = feedparser.parse(response.content)
+
+    if feed.bozo:
+        print(
+            f"[RSS WARNING] {source_name}: "
+            f"Feed parsing warning: {feed.bozo_exception}"
+        )
 
     articles = []
 
@@ -47,10 +61,6 @@ def fetch_rss_feed(url, country, source_name, language):
         if not article_url:
             continue
 
-        # Always use the configured publisher name.
-        publisher = source_name
-
-        # Remove HTML markup from article titles.
         title = clean_html(
             entry.get("title", "Untitled")
         )
@@ -58,7 +68,7 @@ def fetch_rss_feed(url, country, source_name, language):
         article = {
             "title": title or "Untitled",
             "url": article_url,
-            "source": publisher,
+            "source": source_name,
             "published_at": entry.get(
                 "published",
                 entry.get("updated", ""),
@@ -74,6 +84,17 @@ def fetch_rss_feed(url, country, source_name, language):
         }
 
         articles.append(article)
+
+    print(
+        f"[RSS RESULT] {source_name}: "
+        f"{len(articles)} articles retrieved."
+    )
+
+    if not articles:
+        print(
+            f"[RSS WARNING] {source_name}: "
+            "The feed returned no usable articles."
+        )
 
     return articles
 
@@ -91,20 +112,44 @@ def fetch_google_news(country):
 
     country_code = country_settings["country_code"]
 
-    preferred_language = country_settings["language"]
+    preferred_language = country_settings.get(
+        "language",
+        country_settings.get("preferred_language", "English"),
+    )
 
-    def retrieve_edition(hl, ceid_language, language):
+    # Support both ceid_language and full ceid settings.
+    ceid_setting = country_settings.get(
+        "ceid_language",
+        country_settings.get("ceid", ""),
+    )
+
+    if ":" in ceid_setting:
+        ceid_language = ceid_setting.split(":")[-1]
+    else:
+        ceid_language = ceid_setting or "en"
+
+    google_country_code = country_settings.get(
+        "gl",
+        country_code,
+    )
+
+    def retrieve_edition(hl, edition_language, language):
         """Retrieve articles from a specific Google News edition."""
 
         parameters = {
             "hl": hl,
-            "gl": country_code,
-            "ceid": f"{country_code}:{ceid_language}",
+            "gl": google_country_code,
+            "ceid": f"{google_country_code}:{edition_language}",
         }
 
         url = (
             "https://news.google.com/rss?"
             + urlencode(parameters)
+        )
+
+        print(
+            f"[GOOGLE NEWS] Requesting {country} edition: "
+            f"{url}"
         )
 
         return fetch_rss_feed(
@@ -114,31 +159,34 @@ def fetch_google_news(country):
             language=language,
         )
 
+    print(
+        f"[GOOGLE NEWS] Fallback activated for {country}."
+    )
+
     # First attempt: country-specific preferred language.
     articles = retrieve_edition(
         hl=country_settings["hl"],
-        ceid_language=country_settings["ceid_language"],
+        edition_language=ceid_language,
         language=preferred_language,
     )
 
     if articles:
         return articles
 
-    # Second attempt: English edition if the preferred
-    # language edition returned no articles.
+    # Second attempt: English edition if needed.
     if preferred_language != "English":
 
         articles = retrieve_edition(
             hl="en-US",
-            ceid_language="en",
+            edition_language="en",
             language="English",
         )
 
         if articles:
             print(
-                f"No articles found in the preferred "
-                f"{preferred_language} edition for {country}. "
-                "Using the English edition instead."
+                f"[GOOGLE NEWS] No articles found in the "
+                f"preferred {preferred_language} edition "
+                f"for {country}. Using English instead."
             )
 
     return articles
@@ -151,9 +199,8 @@ def fetch_news(country, max_records=20):
     Articles from multiple configured publishers are
     distributed fairly using round-robin selection.
 
-    If no local feeds are available or all configured
-    feeds return no articles, use country-specific
-    Google News RSS discovery.
+    Google News is used only when no configured local
+    RSS feed returns usable articles.
     """
 
     if not 1 <= max_records <= 100:
@@ -161,34 +208,71 @@ def fetch_news(country, max_records=20):
             "max_records must be between 1 and 100."
         )
 
+    print("\n" + "=" * 60)
+    print(f"[NEWS] Starting news retrieval for: {country}")
+    print("=" * 60)
+
     sources = get_sources(country)
+
+    print(
+        f"[NEWS] Configured local RSS sources: {len(sources)}"
+    )
+
+    if sources:
+        for source in sources:
+            print(
+                f"[NEWS] Configured publisher: "
+                f"{source.get('name', 'Unknown')}"
+            )
+    else:
+        print(
+            f"[NEWS WARNING] No local RSS sources "
+            f"configured for {country}."
+        )
 
     article_groups = []
 
     # Retrieve articles from configured local feeds.
-    if sources:
+    for source in sources:
 
-        for source in sources:
+        source_name = source.get("name", "Unknown publisher")
 
-            try:
-                source_articles = fetch_rss_feed(
-                    url=source["url"],
-                    country=country,
-                    source_name=source["name"],
-                    language=source["language"],
-                )
+        try:
+            source_articles = fetch_rss_feed(
+                url=source["url"],
+                country=country,
+                source_name=source_name,
+                language=source["language"],
+            )
 
-                if source_articles:
-                    article_groups.append(source_articles)
+            if source_articles:
+                article_groups.append(source_articles)
 
-            except requests.RequestException as error:
+        except requests.RequestException as error:
 
-                print(
-                    f"Could not retrieve {source['name']}: {error}"
-                )
+            print(
+                f"[RSS ERROR] {source_name}: "
+                f"{type(error).__name__}: {error}"
+            )
 
-    # Use Google News RSS if no local articles were retrieved.
+        except Exception as error:
+
+            print(
+                f"[RSS ERROR] Unexpected error for "
+                f"{source_name}: {type(error).__name__}: {error}"
+            )
+
+    # Use Google News only if no local articles were retrieved.
     if not article_groups:
+
+        print(
+            f"[NEWS WARNING] No local articles retrieved "
+            f"for {country}."
+        )
+
+        print(
+            "[NEWS] Activating Google News fallback."
+        )
 
         try:
             google_articles = fetch_google_news(country)
@@ -196,12 +280,23 @@ def fetch_news(country, max_records=20):
             if google_articles:
                 article_groups.append(google_articles)
 
-        except requests.RequestException as error:
+        except Exception as error:
+
+            print(
+                f"[GOOGLE NEWS ERROR] "
+                f"{type(error).__name__}: {error}"
+            )
 
             raise RuntimeError(
-                f"Could not retrieve news for {country} "
-                f"from Google News RSS: {error}"
+                f"Could not retrieve news for {country}: {error}"
             ) from error
+
+    else:
+
+        print(
+            f"[NEWS] Local RSS feeds succeeded. "
+            "Google News fallback will not be used."
+        )
 
     # Distribute articles fairly across publishers.
     articles = []
@@ -222,4 +317,27 @@ def fetch_news(country, max_records=20):
     # Remove duplicate articles.
     unique_articles = deduplicate_articles(articles)
 
-    return unique_articles[:max_records]
+    final_articles = unique_articles[:max_records]
+
+    # Report publisher distribution.
+    publisher_counts = Counter(
+        article.get("source", "Unknown")
+        for article in final_articles
+    )
+
+    print("\n[NEWS SUMMARY]")
+    print(f"Country: {country}")
+    print(f"Configured local feeds: {len(sources)}")
+    print(f"Article groups retrieved: {len(article_groups)}")
+    print(f"Articles before deduplication: {len(articles)}")
+    print(f"Articles after deduplication: {len(unique_articles)}")
+    print(f"Articles returned: {len(final_articles)}")
+
+    print("[NEWS SUMMARY] Publisher distribution:")
+
+    for publisher, count in publisher_counts.items():
+        print(f"  {publisher}: {count}")
+
+    print("=" * 60 + "\n")
+
+    return final_articles
