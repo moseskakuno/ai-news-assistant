@@ -52,6 +52,9 @@ COUNTRY_LANGUAGES = {
     "KR": {"language": "Korean", "hl": "ko-KR", "ceid_language": "ko"},
     "SA": {"language": "Arabic", "hl": "ar-SA", "ceid_language": "ar"},
     "EG": {"language": "Arabic", "hl": "ar-EG", "ceid_language": "ar"},
+    "IQ": {"language": "Arabic", "hl": "ar-IQ", "gl": "IQ", "ceid_language": "ar"},
+    "IL": {"language": "Hebrew", "hl": "he-IL", "gl": "IL", "ceid_language": "he"},
+    "IR": {"language": "Persian", "hl": "fa-IR", "gl": "IR", "ceid_language": "fa"},
 
     # Africa
     "DZ": {"language": "French", "hl": "fr-FR", "gl": "DZ", "ceid_language": "fr"},
@@ -424,6 +427,73 @@ COUNTRY_LANGUAGES = {
     "gl": "GY",
     "ceid_language": "en",
 },
+"HT": {
+    "language": "French",
+    "hl": "fr-FR",
+    "gl": "HT",
+    "ceid_language": "fr",
+},
+    "HU": {
+        "language": "Hungarian",
+        "hl": "hu-HU",
+        "gl": "HU",
+        "ceid_language": "hu",
+    },
+        "IS": {
+        "language": "Icelandic",
+        "hl": "is-IS",
+        "gl": "IS",
+        "ceid_language": "is",
+    },
+    "JO": {"language": "Arabic", "hl": "ar-JO", "ceid_language": "ar"},
+    "KZ": {"language": "Russian", "hl": "ru-KZ", "ceid_language": "ru"},
+    "KW": {"language": "Arabic", "hl": "ar-KW", "ceid_language": "ar"},
+    "KG": {"language": "Kyrgyz", "hl": "ky-KG", "ceid_language": "ky"},
+    "LV": {
+    "language": "Latvian",
+    "hl": "lv-LV",
+    "ceid_language": "lv",
+},
+    "LB": {
+    "language": "Arabic",
+    "hl": "ar-LB",
+    "ceid_language": "ar",
+},
+    "LS": {
+    "language": "English",
+    "hl": "en-LS",
+    "ceid_language": "en",
+},
+    "LR": {
+    "language": "English",
+    "hl": "en-LR",
+    "ceid_language": "en",
+},
+    "LY": {
+    "language": "Arabic",
+    "hl": "ar-LY",
+    "ceid_language": "ar",
+},
+    "LI": {
+    "language": "German",
+    "hl": "de-LI",
+    "ceid_language": "de",
+},
+    "LT": {
+    "language": "Lithuanian",
+    "hl": "lt-LT",
+    "ceid_language": "lt",
+},
+    "LU": {
+    "language": "German",
+    "hl": "de-LU",
+    "ceid_language": "de",
+},
+    "MG": {
+    "language": "French",
+    "hl": "fr-FR",
+    "ceid_language": "fr",
+},
 
 }
 
@@ -435,6 +505,7 @@ COUNTRY_ALIASES = {
     "Tanzania": "Tanzania, United Republic of",
     "Falkland Islands": "Falkland Islands (Malvinas)",
     "The Gambia": "Gambia",
+    "Iran": "Iran, Islamic Republic of",
 }
 
 

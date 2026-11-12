@@ -8,6 +8,118 @@ NEWS_SOURCES = {
         }
     ],
 
+    "Indonesia": [
+        {
+            "name": "ANTARA",
+            "url": "https://www.antaranews.com/rss/terkini.xml",
+            "language": "Indonesian",
+        },
+        {
+            "name": "CNN Indonesia",
+            "url": "https://www.cnnindonesia.com/rss",
+            "language": "Indonesian",
+        },
+        {
+            "name": "Republika",
+            "url": "https://www.republika.co.id/rss",
+            "language": "Indonesian",
+        },
+        {
+            "name": "CNBC Indonesia",
+            "url": "https://www.cnbcindonesia.com/rss",
+            "language": "Indonesian",
+        },
+    ],
+
+    "Iran": [
+        {
+            "name": "YJC",
+            "url": "https://www.yjc.ir/fa/rss/allnews",
+            "language": "Persian",
+        },
+        {
+            "name": "TABNAK",
+            "url": "https://www.tabnak.ir/fa/rss/allnews",
+            "language": "Persian",
+        },
+        {
+            "name": "ISNA",
+            "url": "https://www.isna.ir/rss",
+            "language": "Persian",
+        },
+        {
+            "name": "Mehr News",
+            "url": "https://www.mehrnews.com/rss",
+            "language": "Persian",
+        },
+        {
+            "name": "Khabaronline",
+            "url": "https://www.khabaronline.ir/rss",
+            "language": "Persian",
+        },
+        {
+            "name": "Asr Iran",
+            "url": "https://www.asriran.com/fa/rss/allnews",
+            "language": "Persian",
+        },
+        {
+            "name": "IRNA",
+            "url": "https://www.irna.ir/rss/tp/1018",
+            "language": "Persian",
+        },
+    ],
+
+    "Israel": [
+        {
+            "name": "Ynet",
+            "url": "https://www.ynet.co.il/Integration/StoryRss1854.xml",
+            "language": "Hebrew",
+        },
+        {
+            "name": "Walla",
+            "url": "https://rss.walla.co.il/feed/1?type=main",
+            "language": "Hebrew",
+        },
+        {
+            "name": "Maariv",
+            "url": "https://www.maariv.co.il/Rss/RssFeedsMivzakiChadashot",
+            "language": "Hebrew",
+        },
+        {
+            "name": "The Times of Israel",
+            "url": "https://www.timesofisrael.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "The Jerusalem Post",
+            "url": "https://www.jpost.com/Rss/RssFeedsIsraelNews.aspx",
+            "language": "English",
+        },
+    ],
+
+    "Iraq": [
+        {
+            "name": "Alsumaria",
+            "url": "https://www.alsumaria.tv/Rss/iraq-latest-news/ar",
+            "language": "Arabic",
+        },
+        {
+            "name": "Kitabat",
+            "url": "https://kitabat.com/feed",
+            "language": "Arabic",
+        },
+        {
+            "name": "Iraq News Network",
+            "url": "https://aliraqnews.com/feed",
+            "language": "Arabic",
+        },
+        {
+            "name": "Alikhbariya Iraq",
+            "url": "https://alikhbariya.net/feeds/countries/iq.xml",
+            "language": "Arabic",
+        },
+    ],
+
     "Kenya": [
         {
             "name": "Daily Nation",
@@ -1054,6 +1166,31 @@ NEWS_SOURCES = {
             "url": "https://proceso.hn/feed/",
             "language": "Spanish",
         },
+                {
+            "name": "Criterio",
+            "url": "https://criterio.hn/feed/",
+            "language": "Spanish"
+        },
+        {
+            "name": "El Pulso",
+            "url": "https://elpulso.hn/feed/",
+            "language": "Spanish"
+        },
+        {
+            "name": "Contracorriente",
+            "url": "https://contracorriente.red/feed/",
+            "language": "Spanish"
+        },
+        {
+            "name": "El Libertador",
+            "url": "https://ellibertador.hn/feed/",
+            "language": "Spanish"
+        },
+        {
+            "name": "HCH",
+            "url": "https://hch.tv/feed/",
+            "language": "Spanish"
+        },
         {
             "name": "Hondudiario",
             "url": "https://hondudiario.com/feed/",
@@ -1084,6 +1221,43 @@ NEWS_SOURCES = {
             "url": "https://www.tunota.com/rss/economia.xml",
             "language": "Spanish",
         },
+    ],
+        "Hungary": [
+        {
+            "name": "Telex",
+            "url": "https://telex.hu/rss",
+            "language": "Hungarian"
+        },
+        {
+            "name": "444.hu",
+            "url": "https://444.hu/feed",
+            "language": "Hungarian"
+        },
+        {
+            "name": "HVG",
+            "url": "https://hvg.hu/rss",
+            "language": "Hungarian"
+        },
+        {
+            "name": "24.hu",
+            "url": "https://24.hu/feed/",
+            "language": "Hungarian"
+        },
+        {
+            "name": "Portfolio",
+            "url": "https://www.portfolio.hu/rss/all.xml",
+            "language": "Hungarian"
+        },
+        {
+            "name": "ATV",
+            "url": "https://www.atv.hu/rss",
+            "language": "Hungarian"
+        },
+        {
+            "name": "Daily News Hungary",
+            "url": "https://dailynewshungary.com/feed/",
+            "language": "English"
+        }
     ],
 
     "El Salvador": [
@@ -2013,6 +2187,16 @@ NEWS_SOURCES = {
             "url": "https://www.independent.ie/irish-news/rss",
             "language": "English",
         },
+        {
+            "name": "The42",
+            "url": "https://www.the42.ie/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Irish Examiner",
+            "url": "https://feeds.feedburner.com/ietopstories",
+            "language": "English",
+        },
     ],
     "Guyana": [
     {
@@ -2042,6 +2226,40 @@ NEWS_SOURCES = {
     },
     
 ],
+    "Haiti": [
+    {
+        "name": "Haiti Libre",
+        "url": "https://www.haitilibre.com/rss-flash-en.php",
+        "language": "English",
+    },
+    {
+        "name": "Juno7",
+        "url": "https://juno7.ht/feed/",
+        "language": "French",
+    },
+    {
+        "name": "IciHaiti",
+        "url": "https://www.icihaiti.com/rss-flash-en.php",
+        "language": "English",
+    },
+    {
+        "name": "Rezo Nòdwès",
+        "url": "https://rezonodwes.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Haiti Liberté",
+        "url": "https://haitiliberte.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Le Quotidien 509",
+        "url": "https://lequotidien509.com/feed",
+        "language": "French",
+    },
+    
+],
+    
 
     "Spain": [
         {
@@ -2604,6 +2822,249 @@ NEWS_SOURCES = {
             "language": "French",
         },
     ],
+        "Iceland": [
+        {
+            "name": "RUV - Domestic",
+            "url": "https://www.ruv.is/rss/innlent",
+            "language": "Icelandic",
+        },       
+        {
+            "name": "RUV - English",
+            "url": "https://www.ruv.is/rss/english",
+            "language": "English",
+        },
+        {
+            "name": "Morgunbladid - Domestic",
+            "url": "https://www.mbl.is/feeds/innlent/",
+            "language": "Icelandic",
+        },
+        {
+            "name": "Morgunbladid - English",
+            "url": "https://www.mbl.is/feeds/english/",
+            "language": "English",
+        },
+        {
+            "name": "Heimildin",
+            "url": "https://stundin.is/rss/",
+            "language": "Icelandic",
+        },
+        {
+            "name": "Reykjavik Grapevine",
+            "url": "https://grapevine.is/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Visir",
+            "url": "https://www.visir.is/apps/pbcs.dll/section?Category=FRETTIR&Template=rss&mime=xml",
+            "language": "Icelandic",
+        },
+    ],
+            "Jordan": [
+        {
+            "name": "Alikhbariya Jordan",
+            "url": "https://alikhbariya.net/feeds/countries/jo.xml",
+            "language": "Arabic",
+        },
+        {
+            "name": "Google News Jordan Arabic",
+            "url": "https://news.google.com/rss/search?q=Jordan+local+news&hl=ar&gl=JO&ceid=JO:ar",
+            "language": "Arabic",
+        },
+    ],
+    "Kazakhstan": [
+    {
+        "name": "The Astana Times",
+        "url": "https://astanatimes.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Tengrinews",
+        "url": "https://tengrinews.kz/news.rss",
+        "language": "Russian",
+    },
+    {
+        "name": "Kazakhstan Today",
+        "url": "https://www.kt.kz/eng/rss",
+        "language": "English",
+    },
+],
+"Kuwait": [
+    {
+        "name": "Al-Anba",
+        "url": "https://www.alanba.com.kw/rss/kuwait-news",
+        "language": "Arabic",
+    },
+    {
+        "name": "Al-Seyassah",
+        "url": "https://alseyassah.com/rssFeed/8/",
+        "language": "Arabic",
+    },
+    {
+        "name": "Alikhbariya Kuwait",
+        "url": "https://alikhbariya.net/feeds/countries/kw.xml",
+        "language": "Arabic",
+    },
+    {
+        "name": "Kuwait News",
+        "url": "https://kuwaitnews.com/feed/",
+        "language": "Arabic",
+    },
+],
+"Kyrgyzstan": [
+    {
+        "name": "24.kg",
+        "url": "https://24.kg/rss/",
+        "language": "Russian",
+    },
+    {
+        "name": "AKIpress",
+        "url": "https://akipress.com/rss/",
+        "language": "English",
+    },
+    {
+        "name": "Kloop",
+        "url": "https://kloop.kg/feed/",
+        "language": "Russian",
+    },
+],
+"Latvia": [
+    {
+        "name": "LSM English",
+        "url": "https://eng.lsm.lv/rss/",
+        "language": "English",
+    },
+    {
+        "name": "LSM Latvian",
+        "url": "https://www.lsm.lv/rss/",
+        "language": "Latvian",
+    },
+    {
+        "name": "Delfi Latvia",
+        "url": "https://www.delfi.lv/rss.php",
+        "language": "Latvian",
+    },
+    {
+        "name": "TVNET",
+        "url": "https://www.tvnet.lv/rss",
+        "language": "Latvian",
+    },
+    {
+        "name": "Jauns",
+        "url": "https://jauns.lv/rss",
+        "language": "Latvian",
+    },
+    {
+        "name": "Latvijas Avize",
+        "url": "https://www.la.lv/feed",
+        "language": "Latvian",
+    },
+    {
+        "name": "Baltic News Network",
+        "url": "https://bnn-news.com/feed",
+        "language": "English",
+    },
+],
+"Lebanon": [
+    {
+        "name": "Al Modon",
+        "url": "https://www.almodon.com/rss",
+        "language": "Arabic",
+    },
+    {
+        "name": "Annahar",
+        "url": "https://www.annahar.com/rss",
+        "language": "Arabic",
+    },
+    {
+        "name": "Janoubia",
+        "url": "https://janoubia.com/feed/",
+        "language": "Arabic",
+    },
+],
+"Lesotho": [
+    {
+        "name": "The Reporter",
+        "url": "https://thereporter.co.ls/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Lesotho News Agency (LENA)",
+        "url": "https://www.lena.gov.ls/feed/",
+        "language": "English",
+    },
+],
+"Liberia": [
+    {
+        "name": "FrontPage Africa",
+        "url": "https://frontpageafricaonline.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "AllAfrica Liberia",
+        "url": "https://allafrica.com/tools/headlines/rdf/liberia/headlines.rdf",
+        "language": "English",
+    },
+],
+"Libya": [
+    {
+        "name": "Libya Herald",
+        "url": "https://libyaherald.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "The Libya Update",
+        "url": "https://libyaupdate.com/feed/",
+        "language": "English",
+    },
+],
+"Liechtenstein": [
+    {
+        "name": "Landesspiegel",
+        "url": "https://landesspiegel.li/feed/",
+        "language": "German",
+    },
+    {
+        "name": "Google News Liechtenstein",
+        "url": "https://news.google.com/rss/search?q=Liechtenstein+news&hl=de&gl=LI&ceid=LI:de",
+        "language": "German",
+    },
+],
+"Lithuania": [
+    {
+        "name": "Made in Vilnius",
+        "url": "https://madeinvilnius.lt/feed/",
+        "language": "Lithuanian",
+    },
+],
+"Luxembourg": [
+    {
+        "name": "Luxemburger Wort",
+        "url": "https://www.wort.lu/rss",
+        "language": "German",
+    },
+    {
+        "name": "LuxTimes",
+        "url": "https://www.luxtimes.lu/rss",
+        "language": "English",
+    },
+],
+"Madagascar": [
+    {
+        "name": "Madagascar Tribune",
+        "url": "https://www.madagascar-tribune.com/spip.php?page=backend",
+        "language": "French",
+    },
+    {
+        "name": "Midi Madagasikara",
+        "url": "https://midi-madagasikara.mg/feed/",
+        "language": "French",
+    },
+    {
+        "name": "2424.mg",
+        "url": "https://2424.mg/feed/",
+        "language": "French",
+    },
+],
 
 }
 
