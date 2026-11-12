@@ -3065,6 +3065,127 @@ NEWS_SOURCES = {
         "language": "French",
     },
 ],
+"Malaysia": [
+    {
+        "name": "Malay Mail",
+        "url": "https://www.malaymail.com/feed/rss/malaysia",
+        "language": "English",
+    },
+    {
+        "name": "Free Malaysia Today",
+        "url": "https://www.freemalaysiatoday.com/feed/",
+        "language": "English and Malay",
+    },
+],
+"Mali": [
+    {
+        "name": "Malijet",
+        "url": "https://malijet.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Studio Tamani",
+        "url": "https://www.studiotamani.org/feed",
+        "language": "French",
+    },
+    {
+        "name": "Bamada",
+        "url": "https://bamada.net/feed",
+        "language": "French",
+    },
+    {
+        "name": "Journal du Mali",
+        "url": "https://journaldumali.com/feed/",
+        "language": "French",
+    },
+],
+"Malta": [
+    {
+        "name": "Newsbook",
+        "url": "https://newsbook.com.mt/en/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Lovin Malta",
+        "url": "https://lovinmalta.com/feed/",
+        "language": "English",
+    },
+],
+    "Marshall Islands": [
+        {
+            "name": "Marshall Islands Journal",
+            "url": "https://marshallislandsjournal.com/feed/",
+            "language": "English",
+        },
+    ],
+        "Martinique": [
+        {
+            "name": "France-Antilles Martinique - Local",
+            "url": "https://www.martinique.franceantilles.fr/actualite/vielocale/rss.xml",
+            "language": "French",
+        },
+        {
+            "name": "France-Antilles Martinique - Politics",
+            "url": "https://www.martinique.franceantilles.fr/actualite/politique/rss.xml",
+            "language": "French",
+        },
+        {
+            "name": "Martinique La 1ère",
+            "url": "https://la1ere.franceinfo.fr/martinique/actu/rss",
+            "language": "French",
+        },
+    ],
+        "Mauritania": [
+        {
+            "name": "Sahara Media",
+            "url": "https://saharamedias.net/feed/",
+            "language": "Arabic",
+        },
+        {
+            "name": "AMI Mauritania",
+            "url": "https://ami.mr/feed/",
+            "language": "Arabic",
+        },
+        {
+            "name": "Tawary",
+            "url": "https://tawary.com/feed/",
+            "language": "Arabic",
+        },
+    ],
+        "Mauritius": [
+        {
+            "name": "ION News",
+            "url": "https://ionnews.mu/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Sunday Times",
+            "url": "https://sundaytimesmauritius.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Inside News",
+            "url": "https://inside.news/feed/",
+            "language": "French",
+        },
+    ],
+        "Mayotte": [
+        {
+            "name": "Mayotte La 1ère",
+            "url": "https://la1ere.franceinfo.fr/mayotte/actu/rss",
+            "language": "French",
+        },
+        {
+            "name": "Mayotte Hebdo",
+            "url": "https://www.mayottehebdo.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Le Journal de Mayotte",
+            "url": "https://lejournaldemayotte.yt/feed/",
+            "language": "French",
+        },
+    ],
 
 }
 

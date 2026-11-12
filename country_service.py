@@ -494,6 +494,51 @@ COUNTRY_LANGUAGES = {
     "hl": "fr-FR",
     "ceid_language": "fr",
 },
+    "MY": {
+    "language": "Malay",
+    "hl": "ms-MY",
+    "ceid_language": "ms",
+},
+  "ML": {
+    "language": "French",
+    "hl": "fr-FR",
+    "ceid_language": "fr",
+},
+  "MT": {
+    "language": "English",
+    "hl": "en-GB",
+    "ceid_language": "en",
+},
+      "MH": {
+        "country": "Marshall Islands",
+        "language": "English",
+        "hl": "en-US",
+        "ceid_language": "en",
+    },
+          "MQ": {
+        "country": "Martinique",
+        "language": "French",
+        "hl": "fr-FR",
+        "ceid_language": "fr",
+    },
+        "MR": {
+        "country": "Mauritania",
+        "language": "Arabic",
+        "hl": "ar",
+        "ceid_language": "ar",
+    },
+            "MU": {
+        "country": "Mauritius",
+        "language": "English",
+        "hl": "en-US",
+        "ceid_language": "en",
+    },
+        "YT": {
+        "country": "Mayotte",
+        "language": "French",
+        "hl": "fr-FR",
+        "ceid_language": "fr",
+    },
 
 }
 
