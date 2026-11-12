@@ -1747,6 +1747,210 @@ NEWS_SOURCES = {
         "language": "French",
     },
 ],
+"Gabon": [
+    {
+        "name": "Gabon Actu",
+        "url": "https://gabonactu.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Gabon Review",
+        "url": "https://www.gabonreview.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "AGP Gabon",
+        "url": "https://agpgabon.ga/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Direct Infos Gabon",
+        "url": "https://directinfosgabon.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Journal du Gabon",
+        "url": "https://www.journaldugabon.com/feed/",
+        "language": "French",
+    },
+],
+
+"The Gambia": [
+    {
+        "name": "The Point",
+        "url": "https://thepoint.gm/posts/rss/xml",
+        "language": "English",
+    },
+],
+
+"Georgia": [
+    {
+        "name": "Civil Georgia",
+        "url": "https://civil.ge/feed",
+        "language": "English",
+    },
+    {
+        "name": "Netgazeti",
+        "url": "https://netgazeti.ge/feed",
+        "language": "Georgian",
+    },
+    {
+        "name": "OC Media",
+        "url": "https://oc-media.org/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Publika",
+        "url": "https://publika.ge/feed/",
+        "language": "Georgian",
+    },
+],
+
+"Greece": [
+    {
+        "name": "ERT News",
+        "url": "https://www.ertnews.gr/feed/",
+        "language": "Greek",
+    },
+    {
+        "name": "Greek Reporter",
+        "url": "https://greekreporter.com/greece/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Newsbeast",
+        "url": "https://www.newsbeast.gr/feed",
+        "language": "Greek",
+    },
+    {
+        "name": "iefimerida",
+        "url": "https://www.iefimerida.gr/rss.xml",
+        "language": "Greek",
+    },
+    {
+        "name": "Ta Nea",
+        "url": "https://www.tanea.gr/feed/",
+        "language": "Greek",
+    },
+],
+
+"Grenada": [
+    {
+        "name": "NOW Grenada",
+        "url": "https://nowgrenada.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Grenada Informer",
+        "url": "https://thegrenadainformer.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "GBN",
+        "url": "https://gbn.gd/feed/",
+        "language": "English",
+    },
+],
+"Guadeloupe": [
+    {
+        "name": "Guadeloupe la 1ère",
+        "url": "https://la1ere.franceinfo.fr/guadeloupe/actu/rss",
+        "language": "French",
+    },
+    {
+        "name": "France-Antilles Local News",
+        "url": "https://www.guadeloupe.franceantilles.fr/actualite/vielocale/rss.xml",
+        "language": "French",
+    },
+    {
+        "name": "France-Antilles Politics",
+        "url": "https://www.guadeloupe.franceantilles.fr/actualite/politique/rss.xml",
+        "language": "French",
+    },
+],
+"Guam": [
+    {
+        "name": "Google News Guam Search",
+        "url": "https://news.google.com/rss/search?q=Guam+local+news&hl=en-US&gl=GU&ceid=GU:en",
+        "language": "English",
+    },
+],
+"Guernsey": [
+    {
+        "name": "The Quarry",
+        "url": "https://www.thequarry.media/rss/",
+        "language": "English",
+    },
+    {
+        "name": "Bailiwick Express",
+        "url": "https://www.bailiwickexpress.com/category/news-ge/feed/",
+        "language": "English",
+    },
+    {
+        "name": "BBC News Guernsey",
+        "url": "https://feeds.bbci.co.uk/news/world/europe/guernsey/rss.xml",
+        "language": "English",
+    },
+    {
+        "name": "Island FM Guernsey",
+        "url": "https://www.islandfm.com/news/guernsey/feed.xml",
+        "language": "English",
+    },
+],
+"Guinea": [
+    {
+        "name": "Guineematin",
+        "url": "https://guineematin.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Mediaguinee",
+        "url": "https://mediaguinee.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Guineenews",
+        "url": "https://guineenews.org/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Guinee360",
+        "url": "https://www.guinee360.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Vision Guinee",
+        "url": "https://www.visionguinee.info/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Africa Guinee",
+        "url": "https://www.africaguinee.com/feed/",
+        "language": "French",
+    },
+],
+"Guinea-Bissau": [
+    {
+        "name": "O Democrata GB",
+        "url": "https://www.odemocratagb.com/?feed=rss2",
+        "language": "Portuguese",
+    },
+    {
+        "name": "ANG",
+        "url": "https://ang.gw/feed/",
+        "language": "Portuguese",
+    },
+    {
+        "name": "Conosaba do Porto",
+        "url": "https://conosaba.blogspot.com/feeds/posts/default?alt=rss",
+        "language": "Portuguese",
+    },
+      {
+        "name": "AllAfrica Guinea-Bissau",
+        "url": "https://allafrica.com/tools/headlines/rdf/guineabissau/headlines.rdf",
+        "language": "English",
+    },
+],
     "Canada": [
         {
             "name": "CBC News",
@@ -1810,6 +2014,34 @@ NEWS_SOURCES = {
             "language": "English",
         },
     ],
+    "Guyana": [
+    {
+        "name": "Kaieteur News",
+        "url": "https://kaieteurnewsonline.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Guyana Chronicle",
+        "url": "https://guyanachronicle.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Guyana Times",
+        "url": "https://guyanatimesgy.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "iNews Guyana",
+        "url": "https://www.inewsguyana.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Demerara Waves",
+        "url": "https://demerarawaves.com/feed/",
+        "language": "English",
+    },
+    
+],
 
     "Spain": [
         {

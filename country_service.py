@@ -354,6 +354,77 @@ COUNTRY_LANGUAGES = {
     "gl": "PF",
     "ceid_language": "fr",
 },
+"GA": {
+    "language": "French",
+    "hl": "fr-FR",
+    "gl": "GA",
+    "ceid_language": "fr",
+},
+
+"GM": {
+    "language": "English",
+    "hl": "en-GB",
+    "gl": "GM",
+    "ceid_language": "en",
+},
+
+"GE": {
+    "language": "Georgian",
+    "hl": "ka-GE",
+    "gl": "GE",
+    "ceid_language": "ka",
+},
+
+"GR": {
+    "language": "Greek",
+    "hl": "el-GR",
+    "gl": "GR",
+    "ceid_language": "el",
+},
+
+"GD": {
+    "language": "English",
+    "hl": "en-GD",
+    "gl": "GD",
+    "ceid_language": "en",
+},
+"GP": {
+    "language": "French",
+    "hl": "fr-FR",
+    "gl": "GP",
+    "ceid_language": "fr",
+},
+"GU": {
+    "language": "English",
+    "hl": "en-US",
+    "gl": "GU",
+    "ceid_language": "en",
+},
+"GG": {
+    "language": "English",
+    "hl": "en-GB",
+    "gl": "GG",
+    "ceid_language": "en",
+},
+"GN": {
+    "language": "French",
+    "hl": "fr-FR",
+    "gl": "GN",
+    "ceid_language": "fr",
+},
+"GW": {
+    "language": "Portuguese",
+    "hl": "pt-PT",
+    "gl": "GW",
+    "ceid_language": "pt",
+},
+"GY": {
+    "language": "English",
+    "hl": "en-GY",
+    "gl": "GY",
+    "ceid_language": "en",
+},
+
 }
 
 
@@ -363,6 +434,7 @@ COUNTRY_ALIASES = {
     "Bolivia": "Bolivia, Plurinational State of",
     "Tanzania": "Tanzania, United Republic of",
     "Falkland Islands": "Falkland Islands (Malvinas)",
+    "The Gambia": "Gambia",
 }
 
 
