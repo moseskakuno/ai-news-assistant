@@ -3,7 +3,7 @@ import requests
 import feedparser
 
 from bs4 import BeautifulSoup
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urljoin
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime, format_datetime
@@ -15,6 +15,9 @@ from deduplicator import deduplicate_articles
 
 # Maximum permitted age for articles in the latest-news overview.
 MAX_ARTICLE_AGE_DAYS = 7
+
+# Government of Niue media releases.
+NIUE_GOVERNMENT_URL = "https://www.gov.nu/media-releases/"
 
 
 def clean_html(content):
@@ -28,13 +31,13 @@ def clean_html(content):
     return soup.get_text(" ", strip=True)
 
 
-
 def parse_publication_date(date_string):
     """
-    Parse RSS publication dates.
+    Parse RSS and webpage publication dates.
 
-    Supports RFC dates, ISO dates and dates embedded
-    in HTML attributes such as KVF's dc:date content.
+    Supports RFC dates, ISO dates, HTML date attributes,
+    and dates such as Thu, Nov 5, 2026.
+
     Returns a timezone-aware UTC datetime or None.
     """
 
@@ -49,6 +52,9 @@ def parse_publication_date(date_string):
         if date_element:
             date_string = date_element.get("content", "")
 
+    date_string = date_string.strip()
+
+    # First try RFC publication dates.
     try:
         published_date = parsedate_to_datetime(date_string)
 
@@ -60,21 +66,44 @@ def parse_publication_date(date_string):
         return published_date.astimezone(timezone.utc)
 
     except (ValueError, TypeError, OverflowError):
+        pass
 
-        try:
-            published_date = datetime.fromisoformat(
-                date_string.strip().replace("Z", "+00:00")
+    # Try ISO publication dates.
+    try:
+        published_date = datetime.fromisoformat(
+            date_string.replace("Z", "+00:00")
+        )
+
+        if published_date.tzinfo is None:
+            published_date = published_date.replace(
+                tzinfo=timezone.utc
             )
 
-            if published_date.tzinfo is None:
-                published_date = published_date.replace(
-                    tzinfo=timezone.utc
-                )
+        return published_date.astimezone(timezone.utc)
 
-            return published_date.astimezone(timezone.utc)
+    except (ValueError, TypeError, OverflowError):
+        pass
+
+    # Government of Niue format: Thu, Nov 5, 2026.
+    for date_format in (
+        "%a, %b %d, %Y",
+        "%B %d, %Y",
+        "%b %d, %Y",
+    ):
+        try:
+            published_date = datetime.strptime(
+                date_string,
+                date_format,
+            )
+
+            return published_date.replace(
+                tzinfo=timezone.utc
+            )
 
         except (ValueError, TypeError, OverflowError):
-            return None
+            continue
+
+    return None
 
 
 def filter_recent_articles(
@@ -139,8 +168,8 @@ def fetch_rss_feed(url, country, source_name, language):
     print(f"[RSS] Requesting {source_name}: {url}")
 
     headers = {
-    "User-Agent": "Mozilla/5.0"
-}
+        "User-Agent": "Mozilla/5.0"
+    }
 
     response = requests.get(
         url,
@@ -176,14 +205,11 @@ def fetch_rss_feed(url, country, source_name, language):
             entry.get("title", "Untitled")
         )
 
-        # First try the original RSS publication date.
         published_at = entry.get("published", "")
 
         if not published_at:
             published_at = entry.get("updated", "")
 
-        # If the original date is unavailable,
-        # use feedparser's structured date.
         if not published_at:
 
             parsed_date = entry.get("published_parsed")
@@ -236,13 +262,166 @@ def fetch_rss_feed(url, country, source_name, language):
     return articles
 
 
+def fetch_niue_government():
+    """
+    Retrieve media releases from the Government of Niue.
+
+    The government website does not expose a working RSS feed,
+    so articles are collected directly from its media releases
+    listing page.
+    """
+
+    source_name = "Government of Niue"
+    country = "Niue"
+    language = "English"
+
+    print(
+        f"[WEB] Requesting {source_name}: "
+        f"{NIUE_GOVERNMENT_URL}"
+    )
+
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 Chrome/120.0 Safari/537.36"
+        )
+    }
+
+    response = requests.get(
+        NIUE_GOVERNMENT_URL,
+        headers=headers,
+        timeout=30,
+    )
+
+    response.raise_for_status()
+
+    print(
+        f"[WEB] {source_name}: HTTP {response.status_code}, "
+        f"{len(response.content)} bytes received."
+    )
+
+    soup = BeautifulSoup(
+        response.text,
+        "html.parser",
+    )
+
+    articles = []
+
+    for details in soup.select(".media-line-details"):
+
+        heading = details.find(
+            ["h2", "h3", "h4"]
+        )
+
+        if not heading:
+            continue
+
+        link = heading.find_parent(
+            "a",
+            href=True,
+        )
+
+        if not link:
+            continue
+
+        title = clean_html(
+            heading.get_text(" ", strip=True)
+        )
+
+        article_url = urljoin(
+            NIUE_GOVERNMENT_URL,
+            link["href"],
+        )
+
+        date_element = details.select_one(
+            ".media-date"
+        )
+
+        if not date_element:
+            continue
+
+        published_at = date_element.get_text(
+            " ",
+            strip=True,
+        )
+
+        if not title or not article_url or not published_at:
+            continue
+
+        article = {
+            "title": title,
+            "url": article_url,
+            "source": source_name,
+            "published_at": published_at,
+            "language": language,
+            "source_country": country,
+            "summary": "",
+        }
+
+        articles.append(article)
+
+    print(
+        f"[WEB RESULT] {source_name}: "
+        f"{len(articles)} articles retrieved."
+    )
+
+    # Retrieve article text for summaries.
+    for article in articles:
+
+        try:
+            article_response = requests.get(
+                article["url"],
+                headers=headers,
+                timeout=20,
+            )
+
+            article_response.raise_for_status()
+
+            article_soup = BeautifulSoup(
+                article_response.text,
+                "html.parser",
+            )
+
+            paragraphs = []
+
+            for paragraph in article_soup.find_all("p"):
+
+                if "media-date" in paragraph.get(
+                    "class",
+                    [],
+                ):
+                    continue
+
+                text = clean_html(
+                    paragraph.get_text(" ", strip=True)
+                )
+
+                if text and len(text) > 30:
+                    paragraphs.append(text)
+
+            article["summary"] = " ".join(
+                paragraphs
+            )[:4000]
+
+        except requests.RequestException as error:
+
+            print(
+                f"[WEB WARNING] Could not retrieve article "
+                f"content: {article['title']}: {error}"
+            )
+
+    return articles
+
+
 def fetch_google_news(country):
     """
-    Discover news using the country's preferred
-    Google News language and regional edition.
+    Discover news using Google News.
 
-    If the preferred edition has no recent articles,
-    try the English edition.
+    Niue uses a dedicated seven-day search with a relevance
+    filter to reduce unrelated international results.
+
+    All other countries retain their preferred Google News
+    regional edition and English fallback behaviour.
     """
 
     country_settings = get_country_language(country)
@@ -254,7 +433,79 @@ def fetch_google_news(country):
         country_settings.get("preferred_language", "English"),
     )
 
-    # Support both ceid_language and full ceid settings.
+    # Special Google News search for Niue.
+    if country.strip().casefold() == "niue":
+
+        parameters = {
+            "q": "Niue when:7d",
+            "hl": "en-NU",
+            "gl": "NU",
+            "ceid": "NU:en",
+        }
+
+        url = (
+            "https://news.google.com/rss/search?"
+            + urlencode(parameters)
+        )
+
+        print(
+            "[GOOGLE NEWS] Requesting Niue-specific "
+            "seven-day search."
+        )
+
+        articles = fetch_rss_feed(
+            url=url,
+            country=country,
+            source_name="Google News",
+            language="English",
+        )
+
+        articles = filter_recent_articles(
+            articles,
+            "Google News - Niue Search",
+        )
+
+        # Keep results with clear references to Niue.
+        niue_terms = (
+            "niue",
+            "niuean",
+            "vagahau",
+            "alofi",
+        )
+
+        relevant_articles = []
+
+        for article in articles:
+
+            title_text = article.get(
+                "title",
+                "",
+            ).casefold()
+
+            summary_text = article.get(
+                "summary",
+                "",
+            ).casefold()
+
+            searchable_text = (
+                title_text + " " + summary_text
+            )
+
+            if any(
+                term in searchable_text
+                for term in niue_terms
+            ):
+                relevant_articles.append(article)
+
+        print(
+            f"[GOOGLE NEWS] Niue relevance filter: "
+            f"{len(relevant_articles)} of "
+            f"{len(articles)} articles retained."
+        )
+
+        return relevant_articles
+
+    # Existing Google News edition logic for all other countries.
     ceid_setting = country_settings.get(
         "ceid_language",
         country_settings.get("ceid", ""),
@@ -300,7 +551,6 @@ def fetch_google_news(country):
         f"[GOOGLE NEWS] Fallback activated for {country}."
     )
 
-    # First attempt: preferred country-specific edition.
     articles = retrieve_edition(
         hl=country_settings["hl"],
         edition_language=ceid_language,
@@ -315,7 +565,6 @@ def fetch_google_news(country):
     if articles:
         return articles
 
-    # Second attempt: English edition if needed.
     if preferred_language != "English":
 
         articles = retrieve_edition(
@@ -343,11 +592,13 @@ def fetch_news(country, max_records=20):
     """
     Retrieve recent news from configured local RSS feeds.
 
+    Niue also uses its government media releases webpage.
+
     Articles are filtered by publication date before
     round-robin distribution and duplicate removal.
 
     Google News is used only when no configured local
-    RSS feed returns usable recent articles.
+    source returns usable recent articles.
     """
 
     if not 1 <= max_records <= 100:
@@ -386,7 +637,43 @@ def fetch_news(country, max_records=20):
 
     article_groups = []
 
-    # Retrieve and filter articles from local feeds.
+    # Retrieve articles from the Government of Niue website.
+    if country.strip().casefold() == "niue":
+
+        try:
+            niue_articles = fetch_niue_government()
+
+            recent_niue_articles = filter_recent_articles(
+                niue_articles,
+                "Government of Niue",
+            )
+
+            if recent_niue_articles:
+                article_groups.append(
+                    recent_niue_articles
+                )
+            else:
+                print(
+                    "[WEB WARNING] Government of Niue "
+                    "has no articles within the freshness limit."
+                )
+
+        except requests.RequestException as error:
+
+            print(
+                f"[WEB ERROR] Government of Niue: "
+                f"{type(error).__name__}: {error}"
+            )
+
+        except Exception as error:
+
+            print(
+                f"[WEB ERROR] Unexpected error for "
+                f"Government of Niue: "
+                f"{type(error).__name__}: {error}"
+            )
+
+    # Retrieve and filter articles from configured local RSS feeds.
     for source in sources:
 
         source_name = source.get(
@@ -431,7 +718,7 @@ def fetch_news(country, max_records=20):
                 f"{type(error).__name__}: {error}"
             )
 
-    # Use Google News if no local feeds provide recent articles.
+    # Use Google News if no local sources provide recent articles.
     if not article_groups:
 
         print(
@@ -469,7 +756,7 @@ def fetch_news(country, max_records=20):
     else:
 
         print(
-            f"[NEWS] Recent local RSS feeds succeeded. "
+            f"[NEWS] Recent local sources succeeded. "
             "Google News fallback will not be used."
         )
 
@@ -503,7 +790,7 @@ def fetch_news(country, max_records=20):
     print("\n[NEWS SUMMARY]")
     print(f"Country: {country}")
     print(f"Maximum article age: {MAX_ARTICLE_AGE_DAYS} days")
-    print(f"Configured local feeds: {len(sources)}")
+    print(f"Configured local RSS feeds: {len(sources)}")
     print(f"Article groups retrieved: {len(article_groups)}")
     print(f"Articles before deduplication: {len(articles)}")
     print(f"Articles after deduplication: {len(unique_articles)}")

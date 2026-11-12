@@ -592,7 +592,36 @@ COUNTRY_LANGUAGES = {
     "hl": "my-MM",
     "ceid_language": "my",
 },
-
+"NR": {
+    "language": "English",
+    "hl": "en",
+    "ceid_language": "en",
+},
+"NC": {
+    "language": "French",
+    "hl": "fr-NC",
+    "ceid_language": "fr",
+},
+"NE": {
+    "language": "French",
+    "hl": "fr-NE",
+    "ceid_language": "fr",
+},
+"NU": {
+    "language": "English",
+    "hl": "en-NU",
+    "ceid_language": "en",
+},
+"MK": {
+    "language": "Macedonian",
+    "hl": "mk-MK",
+    "ceid_language": "mk",
+},
+"OM": {
+    "language": "English",
+    "hl": "en-OM",
+    "ceid_language": "en",
+},
 
 }
 

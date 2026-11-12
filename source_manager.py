@@ -3406,6 +3406,88 @@ NEWS_SOURCES = {
         "language": "English",
     },
 ],
+"Nauru": [
+    {
+        "name": "RNZ Pacific – Nauru",
+        "url": "https://www.rnz.co.nz/rss/pacific_nauru",
+        "language": "English",
+    },
+],
+"New Caledonia": [
+    {
+        "name": "Nouvelle-Calédonie la 1ère",
+        "url": "https://la1ere.franceinfo.fr/nouvellecaledonie/actu/rss",
+        "language": "French",
+    },
+    {
+        "name": "Government of New Caledonia",
+        "url": "https://gouv.nc/actualites/rss.xml",
+        "language": "French",
+    },
+],
+"Niger": [
+    {
+        "name": "Journal du Niger",
+        "url": "https://www.journalduniger.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Le Sahel",
+        "url": "https://www.lesahel.org/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Aïr Info",
+        "url": "https://airinfoagadez.com/feed/",
+        "language": "French",
+    },
+],
+"Niue": [
+    {
+        "name": "TV Niue",
+        "url": "https://tvniue.com/feed/",
+        "language": "English",
+    },
+],
+"North Macedonia": [
+    {
+        "name": "Birlik",
+        "url": "https://www.birlik.mk/rss/kuzey_makedonya.xml",
+        "language": "Turkish",
+    },
+    {
+        "name": "Nova Makedonija",
+        "url": "https://novamakedonija.com.mk/feed/",
+        "language": "Macedonian",
+    },
+    {
+        "name": "MKD.mk",
+        "url": "https://mkd.mk/feed/",
+        "language": "Macedonian",
+    },
+    {
+        "name": "MRT",
+        "url": "https://mrt.com.mk/rss.xml",
+        "language": "Macedonian",
+    },
+],
+"Oman": [
+    {
+        "name": "Oman Observer",
+        "url": "https://www.omanobserver.om/rssFeed/1",
+        "language": "English",
+    },
+    {
+        "name": "Times of Oman",
+        "url": "https://timesofoman.com/feed/oman",
+        "language": "English",
+    },
+    {
+        "name": "Oman Observer - Governorates",
+        "url": "https://www.omanobserver.om/rssFeed/1/44",
+        "language": "English",
+    },
+],
 
 }
 
