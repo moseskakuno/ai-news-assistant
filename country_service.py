@@ -15,6 +15,26 @@ COUNTRY_LANGUAGES = {
     "US": {"language": "English", "hl": "en-US", "ceid_language": "en"},
     "GB": {"language": "English", "hl": "en-GB", "ceid_language": "en"},
     "CA": {"language": "English", "hl": "en-CA", "ceid_language": "en"},
+
+    "KH": {
+        "language": "Khmer",
+        "hl": "km-KH",
+        "gl": "KH",
+        "ceid_language": "km",
+    },
+    "CM": {
+        "language": "French",
+        "hl": "fr-CM",
+        "gl": "CM",
+        "ceid_language": "fr",
+    },
+    "CV": {
+        "language": "Portuguese",
+        "hl": "pt-CV",
+        "gl": "CV",
+        "ceid_language": "pt",
+    },
+
     "AU": {"language": "English", "hl": "en-AU", "ceid_language": "en"},
     "IN": {"language": "English", "hl": "en-IN", "ceid_language": "en"},
     "ES": {"language": "Spanish", "hl": "es-ES", "ceid_language": "es"},
@@ -32,123 +52,253 @@ COUNTRY_LANGUAGES = {
     "KR": {"language": "Korean", "hl": "ko-KR", "ceid_language": "ko"},
     "SA": {"language": "Arabic", "hl": "ar-SA", "ceid_language": "ar"},
     "EG": {"language": "Arabic", "hl": "ar-EG", "ceid_language": "ar"},
-        # Algeria
-    "DZ": {"language": "French", "hl": "fr-FR", "gl": "DZ", "ceid_language": "fr",},
+
+    # Africa
+    "DZ": {"language": "French", "hl": "fr-FR", "gl": "DZ", "ceid_language": "fr"},
     "NG": {"language": "English", "hl": "en-NG", "ceid_language": "en"},
     "GH": {"language": "English", "hl": "en-GH", "ceid_language": "en"},
-    "IE": {"language": "English", "hl": "en-IE", "ceid_language": "en"},
-    "NZ": {"language": "English", "hl": "en-NZ", "ceid_language": "en"},
-    "PH": {"language": "English", "hl": "en-PH", "ceid_language": "en"},
-    "PK": {"language": "English", "hl": "en-PK", "ceid_language": "en"},
-    "BD": {"language": "Bengali", "hl": "bn-BD", "ceid_language": "bn"},
-    # Belarus
-"BY": {
-    "language": "Russian",
-    "hl": "ru-BY",
-    "gl": "BY",
-    "ceid_language": "ru",
-},
-# American Samoa
-"AS": {
-    "language": "English",
-    "hl": "en-AS",
-    "gl": "AS",
-    "ceid_language": "en",
-},
-# Anguilla
-"AI": {
-    "language": "English",
-    "hl": "en-AI",
-    "gl": "AI",
-    "ceid_language": "en",
-},
-# Benin
-"BJ": {
-    "language": "French",
-    "hl": "fr-BJ",
-    "gl": "BJ",
-    "ceid_language": "fr",
-},
-# Bermuda
-"BM": {
-    "language": "English",
-    "hl": "en-BM",
-    "gl": "BM",
-    "ceid_language": "en",
-},
-# Bosnia and Herzegovina
-"BA": {
-    "language": "Bosnian",
-    "hl": "bs-BA",
-    "gl": "BA",
-    "ceid_language": "bs",
-},
-    "TH": {"language": "Thai", "hl": "th-TH", "ceid_language": "th"},
-    "VN": {"language": "Vietnamese", "hl": "vi-VN", "ceid_language": "vi"},
-    "ID": {"language": "Indonesian", "hl": "id-ID", "ceid_language": "id"},
-    "TR": {"language": "Turkish", "hl": "tr-TR", "ceid_language": "tr"},
-    "GR": {"language": "Greek", "hl": "el-GR", "ceid_language": "el"},
-    "PL": {"language": "Polish", "hl": "pl-PL", "ceid_language": "pl"},
-    "SE": {"language": "Swedish", "hl": "sv-SE", "ceid_language": "sv"},
-    "NO": {"language": "Norwegian", "hl": "no", "ceid_language": "no"},
-    "DK": {"language": "Danish", "hl": "da-DK", "ceid_language": "da"},
-    "FI": {"language": "Finnish", "hl": "fi-FI", "ceid_language": "fi"},
-    "UA": {"language": "Ukrainian", "hl": "uk-UA", "ceid_language": "uk"},
-    # Aruba
-"AW": {
-    "language": "Papiamento",
-    "hl": "pap-AW",
-    "gl": "AW",
-    "ceid_language": "en",
-},
-# Azerbaijan
-"AZ": {
-    "language": "Azerbaijani",
-    "hl": "az-AZ",
-    "gl": "AZ",
-    "ceid_language": "az",
-},
-        # Angola
-    "AO": {"language": "Portuguese","hl": "pt-AO","gl": "AO","ceid_language": "pt-PT",
+    "BY": {
+        "language": "Russian",
+        "hl": "ru-BY",
+        "gl": "BY",
+        "ceid_language": "ru",
     },
-    # Armenia
-"AM": {
-    "language": "English",
-    "hl": "en-AM",
-    "gl": "AM",
-    "ceid_language": "en",
-},
-        # Antigua and Barbuda
+    "BJ": {
+        "language": "French",
+        "hl": "fr-BJ",
+        "gl": "BJ",
+        "ceid_language": "fr",
+    },
+    "BW": {
+        "language": "English",
+        "hl": "en-BW",
+        "gl": "BW",
+        "ceid_language": "en",
+    },
+    "BI": {
+        "language": "French",
+        "hl": "fr-BI",
+        "gl": "BI",
+        "ceid_language": "fr",
+    },
+
+    # Territories and islands
+    "AS": {
+        "language": "English",
+        "hl": "en-AS",
+        "gl": "AS",
+        "ceid_language": "en",
+    },
+    "AI": {
+        "language": "English",
+        "hl": "en-AI",
+        "gl": "AI",
+        "ceid_language": "en",
+    },
+    "BM": {
+        "language": "English",
+        "hl": "en-BM",
+        "gl": "BM",
+        "ceid_language": "en",
+    },
+    "AW": {
+        "language": "Papiamento",
+        "hl": "pap-AW",
+        "gl": "AW",
+        "ceid_language": "en",
+    },
     "AG": {
         "language": "English",
         "hl": "en-AG",
         "gl": "AG",
         "ceid_language": "en",
     },
-
-    # Albania
-    "AL": {
-        "language": "Albanian",
-        "hl": "sq-AL",
-        "gl": "AL",
-        "ceid_language": "sq",
-    },
-
-    # Afghanistan
-    "AF": {
-        "language": "English",
-        "hl": "en-US",
-        "gl": "AF",
-        "ceid_language": "en",
-    },
-
-    # Barbados
     "BB": {
         "language": "English",
         "hl": "en-GB",
         "gl": "BB",
         "ceid_language": "en",
     },
+
+    # Europe
+    "IE": {"language": "English", "hl": "en-IE", "ceid_language": "en"},
+    "NZ": {"language": "English", "hl": "en-NZ", "ceid_language": "en"},
+    "PH": {"language": "English", "hl": "en-PH", "ceid_language": "en"},
+    "PK": {"language": "English", "hl": "en-PK", "ceid_language": "en"},
+    "BG": {
+        "language": "Bulgarian",
+        "hl": "bg-BG",
+        "gl": "BG",
+        "ceid_language": "bg",
+    },
+    "BN": {
+        "language": "English",
+        "hl": "en-BN",
+        "gl": "BN",
+        "ceid_language": "en",
+    },
+    "BA": {
+        "language": "Bosnian",
+        "hl": "bs-BA",
+        "gl": "BA",
+        "ceid_language": "bs",
+    },
+    "AL": {
+        "language": "Albanian",
+        "hl": "sq-AL",
+        "gl": "AL",
+        "ceid_language": "sq",
+    },
+    "AD": {
+        "language": "Catalan",
+        "hl": "ca-AD",
+        "gl": "AD",
+        "ceid_language": "ca",
+    },
+    "AM": {
+        "language": "English",
+        "hl": "en-AM",
+        "gl": "AM",
+        "ceid_language": "en",
+    },
+    "AZ": {
+        "language": "Azerbaijani",
+        "hl": "az-AZ",
+        "gl": "AZ",
+        "ceid_language": "az",
+    },
+    "UA": {"language": "Ukrainian", "hl": "uk-UA", "ceid_language": "uk"},
+    "GR": {"language": "Greek", "hl": "el-GR", "ceid_language": "el"},
+    "PL": {"language": "Polish", "hl": "pl-PL", "ceid_language": "pl"},
+    "SE": {"language": "Swedish", "hl": "sv-SE", "ceid_language": "sv"},
+    "NO": {"language": "Norwegian", "hl": "no", "ceid_language": "no"},
+    "DK": {"language": "Danish", "hl": "da-DK", "ceid_language": "da"},
+    "FI": {"language": "Finnish", "hl": "fi-FI", "ceid_language": "fi"},
+
+    # Asia
+    "BD": {"language": "Bengali", "hl": "bn-BD", "ceid_language": "bn"},
+    "TH": {"language": "Thai", "hl": "th-TH", "ceid_language": "th"},
+    "VN": {"language": "Vietnamese", "hl": "vi-VN", "ceid_language": "vi"},
+    "ID": {"language": "Indonesian", "hl": "id-ID", "ceid_language": "id"},
+    "TR": {"language": "Turkish", "hl": "tr-TR", "ceid_language": "tr"},
+    "AF": {
+        "language": "English",
+        "hl": "en-US",
+        "gl": "AF",
+        "ceid_language": "en",
+    },
+"DO": {
+    "language": "Spanish",
+    "hl": "es-DO",
+    "gl": "DO",
+    "ceid_language": "es",
+},
+"GQ": {
+    "language": "Spanish",
+    "hl": "es-GQ",
+    "gl": "GQ",
+    "ceid_language": "es",
+},
+"ER": {
+    "language": "English",
+    "hl": "en-ER",
+    "gl": "ER",
+    "ceid_language": "en",
+},
+"EE": {
+    "language": "Estonian",
+    "hl": "et-EE",
+    "gl": "EE",
+    "ceid_language": "et",
+},
+"SZ": {
+    "language": "English",
+    "hl": "en-SZ",
+    "gl": "SZ",
+    "ceid_language": "en",
+},
+    # South America
+    "AO": {
+        "language": "Portuguese",
+        "hl": "pt-AO",
+        "gl": "AO",
+        "ceid_language": "pt-PT",
+    },
+    # Central African Republic
+    "CF": {
+    "language": "French",
+    "hl": "fr-CF",
+    "gl": "CF",
+    "ceid_language": "fr",
+},
+    "TD": {
+    "language": "French",
+    "hl": "fr-TD",
+    "gl": "TD",
+    "ceid_language": "fr",
+},
+    "CN": {
+    "language": "Chinese",
+    "hl": "zh-CN",
+    "gl": "CN",
+    "ceid_language": "zh-Hans",
+},
+    "KM": {
+    "language": "French",
+    "hl": "fr-FR",
+    "gl": "KM",
+    "ceid_language": "fr",
+},
+    
+"HR": {
+    "language": "Croatian",
+    "hl": "hr-HR",
+    "gl": "HR",
+    "ceid_language": "hr",
+},
+
+"CU": {
+    "language": "Spanish",
+    "hl": "es-CU",
+    "gl": "CU",
+    "ceid_language": "es",
+},
+"CY": {
+    "language": "Greek",
+    "hl": "el-CY",
+    "gl": "CY",
+    "ceid_language": "el",
+},
+"CZ": {
+    "language": "Czech",
+    "hl": "cs-CZ",
+    "gl": "CZ",
+    "ceid_language": "cs",
+},
+"DK": {
+    "language": "Danish",
+    "hl": "da-DK",
+    "gl": "DK",
+    "ceid_language": "da",
+},
+"DJ": {
+    "language": "French",
+    "hl": "fr-DJ",
+    "gl": "DJ",
+    "ceid_language": "fr",
+},
+"DM": {
+    "language": "English",
+    "hl": "en-DM",
+    "gl": "DM",
+    "ceid_language": "en",
+},
+    "PY": {"language": "Spanish", "hl": "es-PY", "ceid_language": "es"},
+    "CL": {"language": "Spanish", "hl": "es-CL", "ceid_language": "es"},
+    "PE": {"language": "Spanish", "hl": "es-PE", "ceid_language": "es"},
+    "EC": {"language": "Spanish", "hl": "es-EC", "ceid_language": "es"},
+    "BO": {"language": "Spanish", "hl": "es-BO", "ceid_language": "es"},
+    "UY": {"language": "Spanish", "hl": "es-UY", "ceid_language": "es"},
 
     # Central America
     "PA": {"language": "Spanish", "hl": "es-PA", "ceid_language": "es"},
@@ -161,18 +311,27 @@ COUNTRY_LANGUAGES = {
     # Caribbean
     "JM": {"language": "English", "hl": "en-JM", "ceid_language": "en"},
     "TT": {"language": "English", "hl": "en-TT", "ceid_language": "en"},
-        # Andorra
-    "AD": {"language": "Catalan","hl": "ca-AD","gl": "AD","ceid_language": "ca",
-    },
-
-    # South America
-    "PY": {"language": "Spanish", "hl": "es-PY", "ceid_language": "es"},
-    "CL": {"language": "Spanish", "hl": "es-CL", "ceid_language": "es"},
-    "PE": {"language": "Spanish", "hl": "es-PE", "ceid_language": "es"},
-    "EC": {"language": "Spanish", "hl": "es-EC", "ceid_language": "es"},
-    "BO": {"language": "Spanish", "hl": "es-BO", "ceid_language": "es"},
-    "UY": {"language": "Spanish", "hl": "es-UY", "ceid_language": "es"},
 }
+
+
+# Alternative country names mapped to pycountry's official names.
+COUNTRY_ALIASES = {
+    "Cape Verde": "Cabo Verde",
+    "Bolivia": "Bolivia, Plurinational State of",
+    "Tanzania": "Tanzania, United Republic of",
+}
+
+
+def _get_country(country_name):
+    """Look up a country, supporting common alternative names."""
+
+    lookup_name = COUNTRY_ALIASES.get(country_name, country_name)
+    country = pycountry.countries.get(name=lookup_name)
+
+    if country is None:
+        raise ValueError(f"Country not found: {country_name}")
+
+    return country
 
 
 def get_countries():
@@ -189,24 +348,17 @@ def get_countries():
 def get_country_code(country_name):
     """Return the ISO 3166-1 alpha-2 code for a country."""
 
-    country = pycountry.countries.get(name=country_name)
-
-    if country is None:
-        raise ValueError(f"Country not found: {country_name}")
-
+    country = _get_country(country_name)
     return country.alpha_2
 
 
 def get_country_details(country_name):
     """Return a country's name and ISO country codes."""
 
-    country = pycountry.countries.get(name=country_name)
-
-    if country is None:
-        raise ValueError(f"Country not found: {country_name}")
+    country = _get_country(country_name)
 
     return {
-        "name": country.name,
+        "name": country_name,
         "alpha_2": country.alpha_2,
         "alpha_3": country.alpha_3,
         "numeric": country.numeric,

@@ -129,8 +129,8 @@ def fetch_rss_feed(url, country, source_name, language):
     print(f"[RSS] Requesting {source_name}: {url}")
 
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; AI-News-Assistant/1.0)"
-    }
+    "User-Agent": "Mozilla/5.0"
+}
 
     response = requests.get(
         url,

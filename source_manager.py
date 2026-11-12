@@ -1299,7 +1299,344 @@ NEWS_SOURCES = {
             "language": "English",
         },
     ],
+    
+    "Cambodia": [
+        {
+            "name": "Koh Santepheap Daily",
+            "url": "https://kohsantepheapdaily.com.kh/feed/",
+            "language": "Khmer",
+        },
+        {
+            "name": "Kampuchea Thmey",
+            "url": "https://kampucheathmey.com/feed",
+            "language": "Khmer",
+        },
+        {
+            "name": "Cambodia Express News (CEN)",
+            "url": "https://cen.com.kh/feed",
+            "language": "Khmer",
+        },
+        {
+            "name": "Khmer Breaking News",
+            "url": "https://kbn.news/feed",
+            "language": "Khmer",
+        },
+        {
+            "name": "CamboJA News",
+            "url": "https://cambojanews.com/feed/",
+            "language": "English",
+        },
+    ],
+    
+    "Cameroon": [
+        {
+            "name": "Journal du Cameroun",
+            "url": "https://fr.journalducameroun.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Actu Cameroun",
+            "url": "https://actucameroun.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Le Bled Parle",
+            "url": "https://www.lebledparle.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Cameroun Actuel",
+            "url": "https://camerounactuel.com/feed/",
+            "language": "French",
+        },
+    ],
+    
+    "Cape Verde": [
+        {
+            "name": "Governo de Cabo Verde",
+            "url": "https://www.governo.cv/noticias/feed/",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Brava News",
+            "url": "https://www.brava.news/rss/latest-posts",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Mindel Insite",
+            "url": "https://mindelinsite.com/feed/",
+            "language": "Portuguese",
+        },
+        {
+            "name": "A Nação",
+            "url": "https://anacao.cv/feed/",
+            "language": "Portuguese",
+        },
+        {
+            "name": "Balai Cabo Verde",
+            "url": "https://www.balai.cv/feed/",
+            "language": "Portuguese",
+        },
+    ],
+    "Central African Republic": [
+    {
+        "name": "Radio Ndeke Luka",
+        "url": "https://www.radiondekeluka.org/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Corbeau News Centrafrique",
+        "url": "https://corbeaunews-centrafrique.org/feed/",
+        "language": "French",
+    },
+],
+    "Chad": [
+    {
+        "name": "Tchad Infos",
+        "url": "https://tchadinfos.com/feed/",
+        "language": "French",
+    },
+    {
+        "name": "Journal du Tchad",
+        "url": "https://journaldutchad.com/feed/",
+        "language": "French",
+    },
+],
+    "China": [
+    {
+        "name": "China News Service - General",
+        "url": "https://www.chinanews.com.cn/rss/scroll-news.xml",
+        "language": "Chinese",
+    },
+    {
+        "name": "China News Service - China",
+        "url": "https://www.chinanews.com.cn/rss/china.xml",
+        "language": "Chinese",
+    },
+    {
+        "name": "CGTN",
+        "url": "https://www.cgtn.com/subscribe/rss/section/china.xml",
+        "language": "English",
+    },
+    {
+        "name": "South China Morning Post",
+        "url": "https://www.scmp.com/rss/4/feed",
+        "language": "English",
+    },
+],
+    "Comoros": [
+    {
+        "name": "HabarizaComores",
+        "url": "https://www.habarizacomores.com/feeds/posts/default?alt=rss",
+        "language": "French",
+    },
+    {
+        "name": "Comores Infos",
+        "url": "https://www.comoresinfos.net/feed/",
+        "language": "French",
+    },
+],
+    
+"Croatia": [
+    {
+        "name": "HRT Vijesti",
+        "url": "https://www.hrt.hr/rss/vijesti/",
+        "language": "Croatian",
+    },
+    {
+        "name": "Index.hr",
+        "url": "https://www.index.hr/rss",
+        "language": "Croatian",
+    },
+    {
+        "name": "Jutarnji list",
+        "url": "https://www.jutarnji.hr/feed/",
+        "language": "Croatian",
+    },
+    {
+        "name": "Poslovni dnevnik",
+        "url": "https://www.poslovni.hr/feed/",
+        "language": "Croatian",
+    },
+    {
+        "name": "tportal",
+        "url": "https://www.tportal.hr/rss",
+        "language": "Croatian",
+    },
+    {
+        "name": "N1 Hrvatska",
+        "url": "https://n1info.hr/feed/",
+        "language": "Croatian",
+    },
+    {
+        "name": "Telegram.hr",
+        "url": "https://telegram.hr/feed/",
+        "language": "Croatian",
+    },
+],
 
+"Cuba": [
+    {
+        "name": "14ymedio",
+        "url": "https://www.14ymedio.com/rss/",
+        "language": "Spanish",
+    },
+    {
+        "name": "CubaDebate",
+        "url": "http://www.cubadebate.cu/feed/",
+        "language": "Spanish",
+    },
+],
+"Cyprus": [
+    {
+        "name": "Cyprus Mail",
+        "url": "https://cyprus-mail.com/feed/",
+        "language": "English",
+    },
+],
+"Czechia": [
+    {
+        "name": "CT24",
+        "url": "https://ct24.ceskatelevize.cz/rss",
+        "language": "Czech",
+    },
+    {
+        "name": "iROZHLAS",
+        "url": "https://www.irozhlas.cz/rss/irozhlas",
+        "language": "Czech",
+    },
+    {
+        "name": "Ceske noviny",
+        "url": "https://www.ceskenoviny.cz/sluzby/rss/zpravy.php",
+        "language": "Czech",
+    },
+],
+"Denmark": [
+    {
+        "name": "DR Nyheder",
+        "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder",
+        "language": "Danish",
+    },
+    {
+        "name": "TV 2 Nyheder",
+        "url": "https://feeds.services.tv2.dk/api/feeds/nyheder/rss",
+        "language": "Danish",
+    },
+    {
+        "name": "Berlingske",
+        "url": "https://www.berlingske.dk/content/3/rss",
+        "language": "Danish",
+    },
+],
+"Djibouti": [
+    {
+        "name": "RTD",
+        "url": "https://rtd.dj/feed/",
+        "language": "French",
+    },
+    {
+        "name": "La Nation",
+        "url": "https://www.lanation.dj/feed/",
+        "language": "French",
+    },
+    {
+        "name": "ADI",
+        "url": "https://adi.dj/rss",
+        "language": "French",
+    },
+],
+"Dominica": [
+    {
+        "name": "Dominica News Online",
+        "url": "https://dominicanewsonline.com/news/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Nature Isle News",
+        "url": "https://www.natureisle.news/feed/",
+        "language": "English",
+    },
+],
+"Dominican Republic": [
+    {
+        "name": "Diario Libre",
+        "url": "https://www.diariolibre.com/rss/portada.xml",
+        "language": "Spanish",
+    },
+    {
+        "name": "Al Momento",
+        "url": "https://almomento.net/feed/",
+        "language": "Spanish",
+    },
+    {
+        "name": "El Día",
+        "url": "https://eldia.com.do/feed/",
+        "language": "Spanish",
+    },
+    {
+        "name": "Noticias SIN",
+        "url": "https://noticiassin.com/feed/",
+        "language": "Spanish",
+    },
+],
+"Equatorial Guinea": [
+    {
+        "name": "Ahora EG",
+        "url": "https://ahoraeg.com/feed/",
+        "language": "Spanish",
+    },
+    {
+        "name": "Real Equatorial Guinea",
+        "url": "https://www.realequatorialguinea.com/feed/",
+        "language": "Spanish",
+    },
+],
+"Eritrea": [
+    {
+        "name": "Shabait",
+        "url": "https://shabait.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Awate",
+        "url": "https://awate.com/feed/",
+        "language": "English",
+    },
+],
+"Estonia": [
+    {
+        "name": "ERR",
+        "url": "https://www.err.ee/rss",
+        "language": "Estonian",
+    },
+    {
+        "name": "ERR News",
+        "url": "https://news.err.ee/rss/news",
+        "language": "English",
+    },
+    {
+        "name": "Postimees",
+        "url": "https://www.postimees.ee/rss",
+        "language": "Estonian",
+    },
+    {
+        "name": "Lääne Elu",
+        "url": "https://online.le.ee/feed/",
+        "language": "Estonian",
+    },
+],
+"Eswatini": [
+    {
+        "name": "Times of Eswatini",
+        "url": "https://times.co.sz/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Eswatini Observer",
+        "url": "https://www.eswatiniobserver.com/feed/",
+        "language": "English",
+    },
+],
     "Canada": [
         {
             "name": "CBC News",
@@ -1827,6 +2164,104 @@ NEWS_SOURCES = {
         "language": "Bosnian",
     },
 ],
+    "Botswana": [
+        {
+            "name": "Mmegi News",
+            "url": "https://www.mmegi.bw/rssFeed/1",
+            "language": "English",
+        },
+        {
+            "name": "Botswana Guardian",
+            "url": "https://guardiansun.co.bw/rssFeed/48",
+            "language": "English",
+        },
+        {
+            "name": "Business Weekly BW",
+            "url": "https://businessweekly.co.bw/feed/",
+            "language": "English",
+        },
+        {
+            "name": "The Voice BW",
+            "url": "https://thevoicebw.com/feed/",
+            "language": "English",
+        },
+    ],
+        "Brunei Darussalam": [
+        {
+            "name": "The Scoop",
+            "url": "https://thescoop.co/feed/",
+            "language": "English",
+        },
+    ],
+            "Bulgaria": [
+        {
+            "name": "Bulgarian News Agency (BTA)",
+            "url": "https://www.bta.bg/bg/news/bulgaria/rss",
+            "language": "Bulgarian",
+        },
+        {
+            "name": "Dnevnik",
+            "url": "https://www.dnevnik.bg/rss/",
+            "language": "Bulgarian",
+        },
+        {
+            "name": "Novinite",
+            "url": "https://www.novinite.com/services/news_rdf.php",
+            "language": "English",
+        },
+        {
+            "name": "Mediapool",
+            "url": "https://www.mediapool.bg/rss",
+            "language": "Bulgarian",
+        },
+        {
+            "name": "Actualno",
+            "url": "https://actualno.com/rss",
+            "language": "Bulgarian",
+        },
+        {
+            "name": "Capital",
+            "url": "https://www.capital.bg/rss/",
+            "language": "Bulgarian",
+        },
+    ],
+                "Burundi": [
+        {
+            "name": "IWACU",
+            "url": "https://www.iwacu-burundi.org/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Yaga Burundi",
+            "url": "https://www.yaga-burundi.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "SOS Médias Burundi",
+            "url": "https://www.sosmediasburundi.org/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Agence Burundaise de Presse (ABP)",
+            "url": "https://abpinfo.bi/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Burundi Agnews",
+            "url": "https://burundi-agnews.org/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Burundi Times",
+            "url": "https://www.burunditimes.com/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Le Renouveau",
+            "url": "https://lerenouveau.bi/feed/",
+            "language": "French",
+        },
+    ],
 
 }
 
