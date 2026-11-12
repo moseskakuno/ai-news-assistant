@@ -825,7 +825,7 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
     ],
-                                        "Bolivia": [
+        "Bolivia": [
         {
             "name": "Opinión Bolivia",
             "url": "https://www.opinion.com.bo/rss/",
@@ -1832,5 +1832,13 @@ NEWS_SOURCES = {
 
 
 def get_sources(country):
-    """Return the configured RSS sources for a country."""
-    return NEWS_SOURCES.get(country, [])
+    """Return configured RSS sources, including known country-name aliases."""
+
+    country_aliases = {
+        "Bolivia, Plurinational State of": "Bolivia",
+        "Tanzania, United Republic of": "Tanzania",
+    }
+
+    country_key = country_aliases.get(country, country)
+
+    return NEWS_SOURCES.get(country_key, [])
