@@ -217,6 +217,18 @@ COUNTRY_LANGUAGES = {
     "gl": "SZ",
     "ceid_language": "en",
 },
+"ET": {
+    "language": "Amharic",
+    "hl": "am-ET",
+    "gl": "ET",
+    "ceid_language": "am",
+},
+"FK": {
+    "language": "English",
+    "hl": "en-FK",
+    "gl": "FK",
+    "ceid_language": "en",
+},
     # South America
     "AO": {
         "language": "Portuguese",
@@ -311,6 +323,37 @@ COUNTRY_LANGUAGES = {
     # Caribbean
     "JM": {"language": "English", "hl": "en-JM", "ceid_language": "en"},
     "TT": {"language": "English", "hl": "en-TT", "ceid_language": "en"},
+    
+"FO": {
+    "language": "Faroese",
+    "hl": "fo-FO",
+    "gl": "FO",
+    "ceid_language": "fo",
+},
+"FJ": {
+    "language": "English",
+    "hl": "en-FJ",
+    "gl": "FJ",
+    "ceid_language": "en",
+},
+"FI": {
+    "language": "Finnish",
+    "hl": "fi-FI",
+    "gl": "FI",
+    "ceid_language": "fi",
+},
+"GF": {
+    "language": "French",
+    "hl": "fr-FR",
+    "gl": "GF",
+    "ceid_language": "fr",
+},
+"PF": {
+    "language": "French",
+    "hl": "fr-FR",
+    "gl": "PF",
+    "ceid_language": "fr",
+},
 }
 
 
@@ -319,6 +362,7 @@ COUNTRY_ALIASES = {
     "Cape Verde": "Cabo Verde",
     "Bolivia": "Bolivia, Plurinational State of",
     "Tanzania": "Tanzania, United Republic of",
+    "Falkland Islands": "Falkland Islands (Malvinas)",
 }
 
 

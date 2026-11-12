@@ -28,16 +28,26 @@ def clean_html(content):
     return soup.get_text(" ", strip=True)
 
 
+
 def parse_publication_date(date_string):
     """
     Parse RSS publication dates.
 
-    Supports RFC-formatted dates and ISO-formatted dates.
+    Supports RFC dates, ISO dates and dates embedded
+    in HTML attributes such as KVF's dc:date content.
     Returns a timezone-aware UTC datetime or None.
     """
 
     if not date_string:
         return None
+
+    # Extract an ISO date from HTML attributes if present.
+    if "<" in date_string and ">" in date_string:
+        soup = BeautifulSoup(date_string, "html.parser")
+        date_element = soup.find(attrs={"content": True})
+
+        if date_element:
+            date_string = date_element.get("content", "")
 
     try:
         published_date = parsedate_to_datetime(date_string)

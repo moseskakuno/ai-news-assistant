@@ -1637,6 +1637,116 @@ NEWS_SOURCES = {
         "language": "English",
     },
 ],
+"Ethiopia": [
+    {
+        "name": "Addis Fortune",
+        "url": "https://addisfortune.news/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Fana Media",
+        "url": "https://www.fanabc.com/feed/",
+        "language": "Amharic",
+    },
+    {
+        "name": "The Habesha",
+        "url": "https://zehabesha.com/feed/",
+        "language": "English",
+    },
+],
+"Falkland Islands": [
+    {
+        "name": "Penguin News",
+        "url": "https://penguin-news.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "MercoPress",
+        "url": "https://en.mercopress.com/rss/falkland-islands",
+        "language": "English",
+    },
+    {
+        "name": "The Guardian",
+        "url": "https://www.theguardian.com/uk/falklands/rss",
+        "language": "English",
+    },
+],
+
+"Faroe Islands": [
+    {
+        "name": "KVF",
+        "url": "https://kvf.fo/rss/tidindi",
+        "language": "Faroese",
+    },
+    {
+        "name": "Local.fo (Faroe News)",
+        "url": "https://local.fo/feed/",
+        "language": "English",
+    },
+],
+"Fiji": [
+    {
+        "name": "FBC News",
+        "url": "https://www.fbcnews.com.fj/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Islands Business",
+        "url": "https://islandsbusiness.com/feed/",
+        "language": "English",
+    },
+],
+"Finland": [
+    {
+        "name": "Yle",
+        "url": "https://yle.fi/rss/uutiset/tuoreimmat",
+        "language": "Finnish",
+    },
+    {
+        "name": "Yle News",
+        "url": "https://yle.fi/rss/news",
+        "language": "English",
+    },
+    {
+        "name": "Helsingin Sanomat",
+        "url": "https://www.hs.fi/rss/tuoreimmat.xml",
+        "language": "Finnish",
+    },
+    {
+        "name": "Ilta-Sanomat",
+        "url": "https://www.is.fi/rss/uutiset.xml",
+        "language": "Finnish",
+    },
+    {
+        "name": "Iltalehti",
+        "url": "https://www.iltalehti.fi/rss/uutiset.xml",
+        "language": "Finnish",
+    },
+],
+"French Guiana": [
+    {
+        "name": "Guyane La 1ère",
+        "url": "https://la1ere.franceinfo.fr/guyane/actu/rss",
+        "language": "French",
+    },
+    {
+        "name": "France-Guyane Local News",
+        "url": "https://www.franceguyane.fr/actualite/vielocale/rss.xml",
+        "language": "French",
+    },
+],
+"French Polynesia": [
+    {
+        "name": "Tahiti Infos",
+        "url": "https://www.tahiti-infos.com/xml/syndication.rss",
+        "language": "French",
+    },
+    {
+        "name": "Polynésie La 1ère",
+        "url": "https://la1ere.franceinfo.fr/polynesie/actu/rss",
+        "language": "French",
+    },
+],
     "Canada": [
         {
             "name": "CBC News",
