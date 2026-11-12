@@ -12,6 +12,11 @@ COUNTRY_LANGUAGES = {
     "FR": {"language": "French", "hl": "fr-FR", "ceid_language": "fr"},
     "BR": {"language": "Portuguese", "hl": "pt-BR", "ceid_language": "pt-BR"},
     "ZA": {"language": "English", "hl": "en-ZA", "ceid_language": "en"},
+    "NA": {
+    "language": "English",
+    "hl": "en-NA",
+    "ceid_language": "en",
+},
     "US": {"language": "English", "hl": "en-US", "ceid_language": "en"},
     "GB": {"language": "English", "hl": "en-GB", "ceid_language": "en"},
     "CA": {"language": "English", "hl": "en-CA", "ceid_language": "en"},
@@ -539,6 +544,55 @@ COUNTRY_LANGUAGES = {
         "hl": "fr-FR",
         "ceid_language": "fr",
     },
+            "MD": {
+        "country": "Moldova, Republic of",
+        "language": "Romanian",
+        "hl": "ro-MD",
+        "ceid_language": "ro",
+    },
+                "MC": {
+        "country": "Monaco",
+        "language": "French",
+        "hl": "fr-MC",
+        "ceid_language": "fr",
+    },
+        "MN": {
+        "country": "Mongolia",
+        "language": "Mongolian",
+        "hl": "mn-MN",
+        "ceid_language": "mn",
+    },
+            "ME": {
+        "country": "Montenegro",
+        "language": "Montenegrin",
+        "hl": "sr-ME",
+        "ceid_language": "sr",
+    },
+        "MS": {
+        "country": "Montserrat",
+        "language": "English",
+        "hl": "en-GB",
+        "ceid_language": "en",
+    },
+     "MA": {
+        "country": "Morocco",
+        "language": "Arabic",
+        "hl": "ar-MA",
+        "ceid_language": "ar",
+    },
+"MZ": {
+    "country": "Mozambique",
+    "language": "Portuguese",
+    "hl": "pt-MZ",
+    "ceid_language": "pt",
+},
+"MM": {
+    "country": "Myanmar",
+    "language": "Burmese",
+    "hl": "my-MM",
+    "ceid_language": "my",
+},
+
 
 }
 

@@ -3186,6 +3186,226 @@ NEWS_SOURCES = {
             "language": "French",
         },
     ],
+            "Micronesia, Federated States of": [
+        {
+            "name": "Yap State Government",
+            "url": "https://yapstate.gov.fm/blog-feed.xml",
+            "language": "English",
+        },
+        {
+            "name": "FSM Government",
+            "url": "https://gov.fm/feed/",
+            "language": "English",
+        },
+    ],
+        "Moldova, Republic of": [
+        {
+            "name": "Moldpres Romanian",
+            "url": "https://moldpres.md/config/rss.php?lang=rom",
+            "language": "Romanian",
+        },
+        {
+            "name": "Moldpres Russian",
+            "url": "https://moldpres.md/config/rss.php?lang=rus",
+            "language": "Russian",
+        },
+        {
+            "name": "Moldpres English",
+            "url": "https://moldpres.md/config/rss.php?lang=eng",
+            "language": "English",
+        },
+        {
+            "name": "NewsMaker",
+            "url": "https://newsmaker.md/feed/",
+            "language": "Russian",
+        },
+        {
+            "name": "TV8",
+            "url": "https://tv8.md/feed",
+            "language": "Romanian",
+        },
+        {
+            "name": "Realitatea",
+            "url": "https://realitatea.md/feed/",
+            "language": "Romanian",
+        },
+    ],
+            "Monaco": [
+        {
+            "name": "Monaco Life",
+            "url": "https://monacolife.net/feed/",
+            "language": "English",
+        },
+        {
+            "name": "Monaco Hebdo",
+            "url": "https://www.monaco-hebdo.com/feed/",
+            "language": "French",
+        },
+    ],
+        "Mongolia": [
+        {
+            "name": "Eguur News",
+            "url": "https://eguur.mn/feed/",
+            "language": "Mongolian",
+        },
+        {
+            "name": "Ikon Mongolia",
+            "url": "https://ikon.mn/rss",
+            "language": "Mongolian",
+        },
+    ],
+            "Montenegro": [
+        {
+            "name": "Vijesti",
+            "url": "https://www.vijesti.me/rss",
+            "language": "Montenegrin",
+        },
+        {
+            "name": "Pobjeda",
+            "url": "https://rss.pobjeda.me/",
+            "language": "Montenegrin",
+        },
+        {
+            "name": "Portal Analitika",
+            "url": "https://rss.portalanalitika.me/",
+            "language": "Montenegrin",
+        },
+        {
+            "name": "Aktuelno",
+            "url": "https://rss.aktuelno.me/",
+            "language": "Montenegrin",
+        },
+        {
+            "name": "Radio Televizija Nikšić",
+            "url": "https://rtnk.me/feed/",
+            "language": "Montenegrin",
+        },
+    ],
+                "Montserrat": [
+        {
+            "name": "ZJB Radio",
+            "url": "https://zjbradio.com/feed/",
+            "language": "English",
+        },
+    ],
+        "Morocco": [
+        {
+            "name": "Hespress Arabic",
+            "url": "https://www.hespress.com/feed",
+            "language": "Arabic",
+        },
+        {
+            "name": "Hespress French",
+            "url": "https://fr.hespress.com/feed",
+            "language": "French",
+        },
+        {
+            "name": "Hespress English",
+            "url": "https://en.hespress.com/feed",
+            "language": "English",
+        },
+        {
+            "name": "Aujourd'hui Le Maroc",
+            "url": "https://aujourdhui.ma/feed",
+            "language": "French",
+        },
+        {
+            "name": "Actu Maroc",
+            "url": "https://actu-maroc.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Yabiladi",
+            "url": "https://www.yabiladi.com/rss/",
+            "language": "French",
+        },
+        {
+            "name": "La Vie Éco",
+            "url": "https://www.lavieeco.com/feed/",
+            "language": "French",
+        },
+        {
+            "name": "Le Reporter",
+            "url": "https://www.lereporter.ma/feed/",
+            "language": "French",
+        },
+    ],
+    "Mozambique": [
+    {
+        "name": "Jornal Notícias",
+        "url": "https://www.jornalnoticias.co.mz/feed/",
+        "language": "Portuguese",
+    },
+    {
+        "name": "MZNews",
+        "url": "https://mznews.co.mz/feed/",
+        "language": "Portuguese",
+    },
+    {
+        "name": "Jornal Domingo",
+        "url": "https://jornaldomingo.co.mz/feed/",
+        "language": "Portuguese",
+    },
+    {
+        "name": "O País",
+        "url": "https://opais.co.mz/feed/",
+        "language": "Portuguese",
+    },
+    {
+        "name": "Jornal Ikweli",
+        "url": "https://ikweli.co.mz/feed/",
+        "language": "Portuguese",
+    },
+],
+"Myanmar": [
+    {
+        "name": "The Irrawaddy English",
+        "url": "https://www.irrawaddy.com/feed",
+        "language": "English",
+    },
+    {
+        "name": "The Irrawaddy Burmese",
+        "url": "https://burma.irrawaddy.com/feed",
+        "language": "Burmese",
+    },
+    {
+        "name": "Myanmar Now English",
+        "url": "https://myanmar-now.org/en/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Myanmar Now Burmese",
+        "url": "https://myanmar-now.org/mm/feed/",
+        "language": "Burmese",
+    },
+    {
+        "name": "DVB English",
+        "url": "https://english.dvb.no/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Global New Light of Myanmar",
+        "url": "https://www.gnlm.com.mm/feed/",
+        "language": "English",
+    },
+],
+"Namibia": [
+    {
+        "name": "The Namibian",
+        "url": "https://www.namibian.com.na/feed/",
+        "language": "English",
+    },
+    {
+        "name": "New Era",
+        "url": "https://neweralive.na/feed/",
+        "language": "English",
+    },
+    {
+        "name": "Namibia Economist",
+        "url": "https://economist.com.na/feed/",
+        "language": "English",
+    },
+],
 
 }
 
