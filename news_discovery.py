@@ -864,6 +864,6 @@ def fetch_news(country, max_records=20):
     for publisher, count in publisher_counts.items():
         print(f"  {publisher}: {count}")
 
-    print("=" * 60 + "\n")
+    print("=" * 60 + "\n") 
 
     return final_articles

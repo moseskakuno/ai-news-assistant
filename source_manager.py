@@ -1,4 +1,3 @@
-
 NEWS_SOURCES = {
     "Germany": [
         {
@@ -6,6 +5,28 @@ NEWS_SOURCES = {
             "url": "https://www.deutschlandfunk.de/nachrichten-100.rss",
             "language": "German",
         }
+    ],
+    
+        "Palestine, State of": [
+        {
+            "name": "Palestine Broadcasting Corporation (PBC)",
+            "url": "https://pbc.ps/feed",
+            "language": "Arabic",
+        },
+    ],
+            "Papua New Guinea": [
+        {
+            "name": "PNG Facts",
+            "url": "https://news.pngfacts.com/feeds/posts/default?alt=rss",
+            "language": "English",
+        },
+    ],
+        "Pitcairn": [
+        {
+            "name": "GOV.UK - Pitcairn Islands",
+            "url": "https://www.gov.uk/search/news-and-communications.atom?world_locations%5B%5D=pitcairn-island",
+            "language": "English",
+        },
     ],
 
     "Indonesia": [
@@ -3745,52 +3766,15 @@ NEWS_SOURCES = {
     ],
         "Lao People's Democratic Republic": [
         {
-            "name": "VOA Lao",
-            "url": "https://lao.voanews.com/api/zrjtrl-vomx-tpeo_gq",
+            "name": "Radio Free Asia (RFA) Lao",
+            "url": "https://www.rfa.org/lao/rss2.xml",
             "language": "Lao",
         },
-    ],
-        "Macao": [
-        {
-            "name": "Macao Government Information Bureau (GCS)",
-            "url": "https://govinfohub.gcs.gov.mo/api/rss/n/en",
-            "language": "English",
-        },
-    ],
-        "Northern Mariana Islands": [
-        {
-            "name": "Saipan Tribune",
-            "url": "https://www.saipantribune.com/index.php/feed",
-            "language": "English",
-        },
-    ],
-        "Norway": [
-        {
-            "name": "NRK - Norway",
-            "url": "https://www.nrk.no/norge/toppsaker.rss",
-            "language": "Norwegian",
-        },
-    ],
-        "Palestine, State of": [
-        {
-            "name": "Palestine Broadcasting Corporation (PBC)",
-            "url": "https://pbc.ps/feed",
-            "language": "Arabic",
-        },
-    ],
-        "Papua New Guinea": [
-        {
-            "name": "PNG Facts",
-            "url": "https://news.pngfacts.com/feeds/posts/default?alt=rss",
-            "language": "English",
-        },
-    ],
-        "Pitcairn": [
-        {
-            "name": "GOV.UK - Pitcairn Islands",
-            "url": "https://www.gov.uk/search/news-and-communications.atom?world_locations%5B%5D=pitcairn-island",
-            "language": "English",
-        },
+         {
+        "name": "VOA Lao",
+        "url": "https://lao.voanews.com/api/zrjtrl-vomx-tpeo_gq",
+        "language": "Lao",
+    },
     ],
     
 
@@ -3807,4 +3791,4 @@ def get_sources(country):
 
     country_key = country_aliases.get(country, country)
 
-    return NEWS_SOURCES.get(country_key, [])
+    return NEWS_SOURCES.get(country_key, []) 
