@@ -3750,6 +3750,48 @@ NEWS_SOURCES = {
             "language": "Lao",
         },
     ],
+        "Macao": [
+        {
+            "name": "Macao Government Information Bureau (GCS)",
+            "url": "https://govinfohub.gcs.gov.mo/api/rss/n/en",
+            "language": "English",
+        },
+    ],
+        "Northern Mariana Islands": [
+        {
+            "name": "Saipan Tribune",
+            "url": "https://www.saipantribune.com/index.php/feed",
+            "language": "English",
+        },
+    ],
+        "Norway": [
+        {
+            "name": "NRK - Norway",
+            "url": "https://www.nrk.no/norge/toppsaker.rss",
+            "language": "Norwegian",
+        },
+    ],
+        "Palestine, State of": [
+        {
+            "name": "Palestine Broadcasting Corporation (PBC)",
+            "url": "https://pbc.ps/feed",
+            "language": "Arabic",
+        },
+    ],
+        "Papua New Guinea": [
+        {
+            "name": "PNG Facts",
+            "url": "https://news.pngfacts.com/feeds/posts/default?alt=rss",
+            "language": "English",
+        },
+    ],
+        "Pitcairn": [
+        {
+            "name": "GOV.UK - Pitcairn Islands",
+            "url": "https://www.gov.uk/search/news-and-communications.atom?world_locations%5B%5D=pitcairn-island",
+            "language": "English",
+        },
+    ],
     
 
 }
