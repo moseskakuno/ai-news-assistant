@@ -6,7 +6,7 @@ NEWS_SOURCES = {
             "language": "German",
         }
     ],
-    
+
         "Palestine, State of": [
         {
             "name": "Palestine Broadcasting Corporation (PBC)",
@@ -359,7 +359,7 @@ NEWS_SOURCES = {
             "language": "French",
         },
         {
-            "name": "Libération",
+            "name": "LibÃ©ration",
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss-all/?outputType=xml",
             "language": "French",
         },
@@ -381,7 +381,7 @@ NEWS_SOURCES = {
             "language": "Portuguese",
         },
         {
-            "name": "Agência Brasil",
+            "name": "AgÃªncia Brasil",
             "url": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml",
             "language": "Portuguese",
         },
@@ -391,7 +391,7 @@ NEWS_SOURCES = {
             "language": "Portuguese",
         },
         {
-            "name": "Jornal de Brasília",
+            "name": "Jornal de BrasÃ­lia",
             "url": "https://jornaldebrasilia.com.br/feed/",
             "language": "Portuguese",
         }
@@ -508,7 +508,7 @@ NEWS_SOURCES = {
             "url": "https://www.vikalpa.org/feed",
             "language": "Sinhala",
         },
-        
+
     ],
                                                                 "Nepal": [
         {
@@ -581,7 +581,7 @@ NEWS_SOURCES = {
             "language": "English",
         },
     ],
-                                                                        
+
     "South Sudan": [
         {
             "name": "Eye Radio",
@@ -624,7 +624,7 @@ NEWS_SOURCES = {
             "language": "English",
         },
     ],
-    
+
     "Romania": [
         {
             "name": "Digi24",
@@ -657,7 +657,7 @@ NEWS_SOURCES = {
             "language": "Romanian",
         },
         {
-            "name": "Știrile ProTV",
+            "name": "È˜tirile ProTV",
             "url": "https://stirileprotv.ro/rss",
             "language": "Romanian",
         },
@@ -775,7 +775,7 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "La Nación",
+            "name": "La NaciÃ³n",
             "url": "https://www.lanacion.cl/feed/",
             "language": "Spanish",
         },
@@ -797,17 +797,17 @@ NEWS_SOURCES = {
     ],
                         "Argentina": [
         {
-            "name": "La Nación",
+            "name": "La NaciÃ³n",
             "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml",
             "language": "Spanish",
         },
         {
-            "name": "Página/12",
+            "name": "PÃ¡gina/12",
             "url": "https://www.pagina12.com.ar/arc/outboundfeeds/rss/portada",
             "language": "Spanish",
         },
         {
-            "name": "Ámbito Financiero",
+            "name": "Ãmbito Financiero",
             "url": "https://www.ambito.com/rss/pages/ultimas-noticias.xml",
             "language": "Spanish",
         },
@@ -832,7 +832,7 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
                 {
-            "name": "Clarín",
+            "name": "ClarÃ­n",
             "url": "https://www.clarin.com/rss/lo-ultimo/",
             "language": "Spanish",
         },
@@ -854,7 +854,7 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "La República",
+            "name": "La RepÃºblica",
             "url": "https://www.larepublica.co/rss",
             "language": "Spanish",
         },
@@ -869,7 +869,7 @@ NEWS_SOURCES = {
             "language": "English",
         },
         {
-            "name": "The City Paper Bogotá",
+            "name": "The City Paper BogotÃ¡",
             "url": "https://thecitypaperbogota.com/feed/",
             "language": "English",
         },
@@ -906,7 +906,7 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "La República",
+            "name": "La RepÃºblica",
             "url": "https://larepublica.pe/rss/home.xml",
             "language": "Spanish",
         },
@@ -923,7 +923,7 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "La República Ecuador",
+            "name": "La RepÃºblica Ecuador",
             "url": "https://www.larepublica.ec/feed/",
             "language": "Spanish",
         },
@@ -943,24 +943,24 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "Crónica",
+            "name": "CrÃ³nica",
             "url": "https://cronica.com.ec/feed/",
             "language": "Spanish",
         },
         {
-            "name": "Manabí Noticias",
+            "name": "ManabÃ­ Noticias",
             "url": "https://manabinoticias.com/feed/",
             "language": "Spanish",
         },
         {
-            "name": "Qué Noticias",
+            "name": "QuÃ© Noticias",
             "url": "https://quenoticias.com/feed/",
             "language": "Spanish",
         },
     ],
         "Bolivia": [
         {
-            "name": "Opinión Bolivia",
+            "name": "OpiniÃ³n Bolivia",
             "url": "https://www.opinion.com.bo/rss/",
             "language": "Spanish",
         },
@@ -970,12 +970,12 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "La Época",
+            "name": "La Ã‰poca",
             "url": "https://www.la-epoca.com.bo/feed/",
             "language": "Spanish",
         },
         {
-            "name": "Visión 360",
+            "name": "VisiÃ³n 360",
             "url": "https://www.vision360.bo/rss/noticias/",
             "language": "Spanish",
         },
@@ -1011,9 +1011,9 @@ NEWS_SOURCES = {
             "url": "https://brecha.com.uy/feed/",
             "language": "Spanish",
         },
-     
+
     ],
-                                            
+
     "Mexico": [
         {
             "name": "Reforma",
@@ -1046,15 +1046,15 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "El Sol de México",
+            "name": "El Sol de MÃ©xico",
             "url": "https://www.elsoldemexico.com.mx/rss.xml",
             "language": "Spanish",
         },
     ],
-    
+
     "Costa Rica": [
         {
-            "name": "La Nación",
+            "name": "La NaciÃ³n",
             "url": "https://www.nacion.com/arc/outboundfeeds/rss/?outputType=xml",
             "language": "Spanish",
         },
@@ -1094,7 +1094,7 @@ NEWS_SOURCES = {
             "language": "English",
         },
     ],
-    
+
     "Panama": [
         {
             "name": "Newsroom Panama",
@@ -1132,12 +1132,12 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "Panamá América",
+            "name": "PanamÃ¡ AmÃ©rica",
             "url": "https://www.panamaamerica.com.pa/rss.xml",
             "language": "Spanish",
         },
     ],
-    
+
     "Guatemala": [
         {
             "name": "Prensa Libre",
@@ -1165,7 +1165,7 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "Plaza Pública",
+            "name": "Plaza PÃºblica",
             "url": "https://www.plazapublica.com.gt/feed/",
             "language": "Spanish",
         },
@@ -1175,7 +1175,7 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "República",
+            "name": "RepÃºblica",
             "url": "https://republica.com/feed/",
             "language": "Spanish",
         },
@@ -1293,22 +1293,22 @@ NEWS_SOURCES = {
             "language": "Spanish",
         },
         {
-            "name": "Periódico Equilibrium",
+            "name": "PeriÃ³dico Equilibrium",
             "url": "https://periodicoequilibrium.com/feed/",
             "language": "Spanish",
         },
         {
-            "name": "La Página",
+            "name": "La PÃ¡gina",
             "url": "https://lapagina.com.sv/feed/",
             "language": "Spanish",
         },
         {
-            "name": "Última Hora SV",
+            "name": "Ãšltima Hora SV",
             "url": "https://ultimahora.sv/feed/",
             "language": "Spanish",
         },
         {
-            "name": "El País",
+            "name": "El PaÃ­s",
             "url": "https://elpais.com.sv/feed/",
             "language": "Spanish",
         },
@@ -1494,7 +1494,7 @@ NEWS_SOURCES = {
             "language": "English",
         },
     ],
-    
+
     "Cambodia": [
         {
             "name": "Koh Santepheap Daily",
@@ -1522,7 +1522,7 @@ NEWS_SOURCES = {
             "language": "English",
         },
     ],
-    
+
     "Cameroon": [
         {
             "name": "Journal du Cameroun",
@@ -1545,7 +1545,7 @@ NEWS_SOURCES = {
             "language": "French",
         },
     ],
-    
+
     "Cape Verde": [
         {
             "name": "Governo de Cabo Verde",
@@ -1563,7 +1563,7 @@ NEWS_SOURCES = {
             "language": "Portuguese",
         },
         {
-            "name": "A Nação",
+            "name": "A NaÃ§Ã£o",
             "url": "https://anacao.cv/feed/",
             "language": "Portuguese",
         },
@@ -1631,7 +1631,7 @@ NEWS_SOURCES = {
         "language": "French",
     },
 ],
-    
+
 "Croatia": [
     {
         "name": "HRT Vijesti",
@@ -1764,7 +1764,7 @@ NEWS_SOURCES = {
         "language": "Spanish",
     },
     {
-        "name": "El Día",
+        "name": "El DÃ­a",
         "url": "https://eldia.com.do/feed/",
         "language": "Spanish",
     },
@@ -1815,7 +1815,7 @@ NEWS_SOURCES = {
         "language": "Estonian",
     },
     {
-        "name": "Lääne Elu",
+        "name": "LÃ¤Ã¤ne Elu",
         "url": "https://online.le.ee/feed/",
         "language": "Estonian",
     },
@@ -1920,7 +1920,7 @@ NEWS_SOURCES = {
 ],
 "French Guiana": [
     {
-        "name": "Guyane La 1ère",
+        "name": "Guyane La 1Ã¨re",
         "url": "https://la1ere.franceinfo.fr/guyane/actu/rss",
         "language": "French",
     },
@@ -1937,7 +1937,7 @@ NEWS_SOURCES = {
         "language": "French",
     },
     {
-        "name": "Polynésie La 1ère",
+        "name": "PolynÃ©sie La 1Ã¨re",
         "url": "https://la1ere.franceinfo.fr/polynesie/actu/rss",
         "language": "French",
     },
@@ -2048,7 +2048,7 @@ NEWS_SOURCES = {
 ],
 "Guadeloupe": [
     {
-        "name": "Guadeloupe la 1ère",
+        "name": "Guadeloupe la 1Ã¨re",
         "url": "https://la1ere.franceinfo.fr/guadeloupe/actu/rss",
         "language": "French",
     },
@@ -2184,7 +2184,7 @@ NEWS_SOURCES = {
 
     "Ireland": [
         {
-            "name": "RTÉ News",
+            "name": "RTÃ‰ News",
             "url": "https://www.rte.ie/feeds/rss/?index=/news/",
             "language": "English",
         },
@@ -2245,7 +2245,7 @@ NEWS_SOURCES = {
         "url": "https://demerarawaves.com/feed/",
         "language": "English",
     },
-    
+
 ],
     "Haiti": [
     {
@@ -2264,12 +2264,12 @@ NEWS_SOURCES = {
         "language": "English",
     },
     {
-        "name": "Rezo Nòdwès",
+        "name": "Rezo NÃ²dwÃ¨s",
         "url": "https://rezonodwes.com/feed/",
         "language": "French",
     },
     {
-        "name": "Haiti Liberté",
+        "name": "Haiti LibertÃ©",
         "url": "https://haitiliberte.com/feed/",
         "language": "French",
     },
@@ -2278,13 +2278,13 @@ NEWS_SOURCES = {
         "url": "https://lequotidien509.com/feed",
         "language": "French",
     },
-    
+
 ],
-    
+
 
     "Spain": [
         {
-            "name": "EL PAÍS",
+            "name": "EL PAÃS",
             "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
             "language": "Spanish",
         },
@@ -2312,7 +2312,7 @@ NEWS_SOURCES = {
 
     "Portugal": [
         {
-            "name": "RTP Notícias",
+            "name": "RTP NotÃ­cias",
             "url": "https://www.rtp.pt/noticias/rss",
             "language": "Portuguese",
         },
@@ -2322,7 +2322,7 @@ NEWS_SOURCES = {
             "language": "Portuguese",
         },
         {
-            "name": "Público",
+            "name": "PÃºblico",
             "url": "https://feeds.feedburner.com/PublicoRSS",
             "language": "Portuguese",
         },
@@ -2332,12 +2332,12 @@ NEWS_SOURCES = {
             "language": "Portuguese",
         },
         {
-            "name": "Diário de Notícias",
+            "name": "DiÃ¡rio de NotÃ­cias",
             "url": "https://www.dn.pt/stories.rss",
             "language": "Portuguese",
         },
         {
-            "name": "Notícias ao Minuto",
+            "name": "NotÃ­cias ao Minuto",
             "url": "https://www.noticiasaominuto.com/rss/ultima-hora",
             "language": "Portuguese",
         },
@@ -2398,7 +2398,7 @@ NEWS_SOURCES = {
             "language": "Dutch",
         },
     ],
-    
+
     "Belgium": [
         {
             "name": "VRT NWS",
@@ -2509,7 +2509,7 @@ NEWS_SOURCES = {
             "language": "Portuguese",
         },
         {
-            "name": "Notícias de Angola",
+            "name": "NotÃ­cias de Angola",
             "url": "https://noticiasdeangola.co.ao/feed/",
             "language": "Portuguese",
         },
@@ -2691,12 +2691,12 @@ NEWS_SOURCES = {
 ],
 "Benin": [
     {
-        "name": "Bénin Web TV",
+        "name": "BÃ©nin Web TV",
         "url": "https://beninwebtv.bj/pays/afrique/afrique-de-louest/benin/feed/",
         "language": "French",
     },
     {
-        "name": "Bénin Intelligent",
+        "name": "BÃ©nin Intelligent",
         "url": "https://beninintelligent.bj/feed/",
         "language": "French",
     },
@@ -2818,7 +2818,7 @@ NEWS_SOURCES = {
             "language": "French",
         },
         {
-            "name": "SOS Médias Burundi",
+            "name": "SOS MÃ©dias Burundi",
             "url": "https://www.sosmediasburundi.org/feed/",
             "language": "French",
         },
@@ -2848,7 +2848,7 @@ NEWS_SOURCES = {
             "name": "RUV - Domestic",
             "url": "https://www.ruv.is/rss/innlent",
             "language": "Icelandic",
-        },       
+        },
         {
             "name": "RUV - English",
             "url": "https://www.ruv.is/rss/english",
@@ -3151,7 +3151,7 @@ NEWS_SOURCES = {
             "language": "French",
         },
         {
-            "name": "Martinique La 1ère",
+            "name": "Martinique La 1Ã¨re",
             "url": "https://la1ere.franceinfo.fr/martinique/actu/rss",
             "language": "French",
         },
@@ -3192,7 +3192,7 @@ NEWS_SOURCES = {
     ],
         "Mayotte": [
         {
-            "name": "Mayotte La 1ère",
+            "name": "Mayotte La 1Ã¨re",
             "url": "https://la1ere.franceinfo.fr/mayotte/actu/rss",
             "language": "French",
         },
@@ -3297,7 +3297,7 @@ NEWS_SOURCES = {
             "language": "Montenegrin",
         },
         {
-            "name": "Radio Televizija Nikšić",
+            "name": "Radio Televizija NikÅ¡iÄ‡",
             "url": "https://rtnk.me/feed/",
             "language": "Montenegrin",
         },
@@ -3341,7 +3341,7 @@ NEWS_SOURCES = {
             "language": "French",
         },
         {
-            "name": "La Vie Éco",
+            "name": "La Vie Ã‰co",
             "url": "https://www.lavieeco.com/feed/",
             "language": "French",
         },
@@ -3353,7 +3353,7 @@ NEWS_SOURCES = {
     ],
     "Mozambique": [
     {
-        "name": "Jornal Notícias",
+        "name": "Jornal NotÃ­cias",
         "url": "https://www.jornalnoticias.co.mz/feed/",
         "language": "Portuguese",
     },
@@ -3368,7 +3368,7 @@ NEWS_SOURCES = {
         "language": "Portuguese",
     },
     {
-        "name": "O País",
+        "name": "O PaÃ­s",
         "url": "https://opais.co.mz/feed/",
         "language": "Portuguese",
     },
@@ -3429,14 +3429,14 @@ NEWS_SOURCES = {
 ],
 "Nauru": [
     {
-        "name": "RNZ Pacific – Nauru",
+        "name": "RNZ Pacific â€“ Nauru",
         "url": "https://www.rnz.co.nz/rss/pacific_nauru",
         "language": "English",
     },
 ],
 "New Caledonia": [
     {
-        "name": "Nouvelle-Calédonie la 1ère",
+        "name": "Nouvelle-CalÃ©donie la 1Ã¨re",
         "url": "https://la1ere.franceinfo.fr/nouvellecaledonie/actu/rss",
         "language": "French",
     },
@@ -3458,7 +3458,7 @@ NEWS_SOURCES = {
         "language": "French",
     },
     {
-        "name": "Aïr Info",
+        "name": "AÃ¯r Info",
         "url": "https://airinfoagadez.com/feed/",
         "language": "French",
     },
@@ -3538,9 +3538,9 @@ NEWS_SOURCES = {
         "language": "English",
     },
 ],
-"Réunion": [
+"RÃ©union": [
     {
-        "name": "Réunion la 1ère",
+        "name": "RÃ©union la 1Ã¨re",
         "url": "https://la1ere.franceinfo.fr/reunion/actu/rss",
         "language": "French",
     },
@@ -3558,7 +3558,7 @@ NEWS_SOURCES = {
             "url": "https://www.sknis.gov.kn/feed/",
             "language": "English",
         },
-        
+
         {
             "name": "St. Kitts-Nevis Observer",
             "url": "https://www.thestkittsnevisobserver.com/feed/",
@@ -3574,7 +3574,7 @@ NEWS_SOURCES = {
 ],
     "Saint Pierre and Miquelon": [
     {
-        "name": "Saint-Pierre-et-Miquelon La 1ère",
+        "name": "Saint-Pierre-et-Miquelon La 1Ã¨re",
         "url": "https://la1ere.franceinfo.fr/saintpierremiquelon/actu/rss",
         "language": "French",
     },
@@ -3652,16 +3652,16 @@ NEWS_SOURCES = {
             "language": "English",
         },
     ],
-        "Curaçao": [
+        "CuraÃ§ao": [
         {
-            "name": "Government of Curaçao",
+            "name": "Government of CuraÃ§ao",
             "url": "https://gobiernu.cw/feed/",
             "language": "Dutch/Papiamentu",
         },
     ],
-        "Curaçao": [
+        "CuraÃ§ao": [
         {
-            "name": "Government of Curaçao",
+            "name": "Government of CuraÃ§ao",
             "url": "https://gobiernu.cw/feed/",
             "language": "Dutch/Papiamentu",
         },
@@ -3764,19 +3764,98 @@ NEWS_SOURCES = {
             "language": "English",
         },
     ],
+
         "Lao People's Democratic Republic": [
         {
             "name": "Radio Free Asia (RFA) Lao",
             "url": "https://www.rfa.org/lao/rss2.xml",
             "language": "Lao",
         },
-         {
-        "name": "VOA Lao",
-        "url": "https://lao.voanews.com/api/zrjtrl-vomx-tpeo_gq",
-        "language": "Lao",
-    },
+        {
+            "name": "VOA Lao",
+            "url": "https://lao.voanews.com/api/zrjtrl-vomx-tpeo_gq",
+            "language": "Lao",
+        },
     ],
-    
+
+    "Poland": [
+        {
+            "name": "Rzeczpospolita",
+            "url": "https://www.rp.pl/rss/1056",
+            "language": "Polish",
+        },
+    ],
+        "Puerto Rico": [
+        {
+            "name": "news.pr",
+            "url": "https://news.pr/rss.xml",
+            "language": "English",
+        },
+    ],
+            "Qatar": [
+        {
+            "name": "Doha News",
+            "url": "https://dohanews.co/feed/",
+            "language": "English",
+        },
+    ],
+                "Russian Federation": [
+        {
+            "name": "Vedomosti",
+            "url": "https://www.vedomosti.ru/rss/news",
+            "language": "Russian",
+        },
+    ],
+        "Samoa": [
+        {
+            "name": "BBC News â€“ Samoa",
+            "url": "https://feeds.bbci.co.uk/news/topics/cg41ylwvwlpt/rss.xml",
+            "language": "en",
+        },
+    ],
+            "San Marino": [
+        {
+            "name": "San Marino RTV",
+            "url": "https://sanmarinortv.sm/news/attualita-c4.xml",
+            "language": "it",
+        },
+    ],
+                "Sao Tome and Principe": [
+        {
+            "name": "TÃ©la NÃ³n",
+            "url": "https://www.telanon.info/feed/",
+            "language": "pt",
+        },
+    ],
+        "Saudi Arabia": [
+        {
+            "name": "Saudi Gazette",
+            "url": "https://saudigazette.com.sa/rssFeed/74",
+            "language": "en",
+        },
+    ],
+        "Senegal": [
+        {
+            "name": "SeneNews",
+            "url": "https://www.senenews.com/feed",
+            "language": "fr",
+        },
+    ],
+            "Serbia": [
+        {
+            "name": "RTS",
+            "url": "https://rts.rs/vesti/rss.html",
+            "language": "sr",
+        },
+    ],
+    "Seychelles": [
+    {
+        "name": "Seychelles Abroad",
+        "url": "https://seychellesabroad.org/feed.xml",
+        "language": "en",
+    },
+],
+
 
 }
 
@@ -3791,4 +3870,4 @@ def get_sources(country):
 
     country_key = country_aliases.get(country, country)
 
-    return NEWS_SOURCES.get(country_key, []) 
+    return NEWS_SOURCES.get(country_key, [])
