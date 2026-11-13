@@ -3488,6 +3488,269 @@ NEWS_SOURCES = {
         "language": "English",
     },
 ],
+"Pakistan": [
+    {
+        "name": "Dawn",
+        "url": "https://www.dawn.com/feeds/pakistan/",
+        "language": "English",
+    },
+    {
+        "name": "The Express Tribune",
+        "url": "https://tribune.com.pk/feed/home",
+        "language": "English",
+    },
+    {
+        "name": "The Nation",
+        "url": "https://nation.com.pk/rss/top-stories",
+        "language": "English",
+    },
+    {
+        "name": "Geo News",
+        "url": "https://www.geo.tv/rss/1/1",
+        "language": "English",
+    },
+],
+"Palau": [
+    {
+        "name": "Island Times",
+        "url": "https://islandtimes.org/feed/",
+        "language": "English",
+    },
+],
+"Réunion": [
+    {
+        "name": "Réunion la 1ère",
+        "url": "https://la1ere.franceinfo.fr/reunion/actu/rss",
+        "language": "French",
+    },
+],
+"Saint Helena, Ascension and Tristan da Cunha": [
+    {
+        "name": "St Helena Government",
+        "url": "https://www.sainthelena.gov.sh/feed/",
+        "language": "English",
+    },
+],
+    "Saint Kitts and Nevis": [
+        {
+            "name": "SKNIS",
+            "url": "https://www.sknis.gov.kn/feed/",
+            "language": "English",
+        },
+        
+        {
+            "name": "St. Kitts-Nevis Observer",
+            "url": "https://www.thestkittsnevisobserver.com/feed/",
+            "language": "English",
+        },
+    ],
+    "Saint Lucia": [
+    {
+        "name": "The Voice St Lucia",
+        "url": "https://thevoiceslu.com/feed/",
+        "language": "English",
+    },
+],
+    "Saint Pierre and Miquelon": [
+    {
+        "name": "Saint-Pierre-et-Miquelon La 1ère",
+        "url": "https://la1ere.franceinfo.fr/saintpierremiquelon/actu/rss",
+        "language": "French",
+    },
+],
+    "Saint Vincent and the Grenadines": [
+    {
+        "name": "iWitness News",
+        "url": "https://www.iwnsvg.com/feed/",
+        "language": "English",
+    },
+    {
+        "name": "NBC Radio SVG",
+        "url": "https://www.nbcsvg.com/feed/",
+        "language": "English",
+    },
+],
+    "Antarctica": [
+        {
+            "name": "United States Antarctic Program",
+            "url": "https://www.usap.gov/documents/usapnews.xml",
+            "language": "English",
+        },
+    ],
+        "Bonaire, Sint Eustatius and Saba": [
+        {
+            "name": "Konseho Insular (Eilandsraad Bonaire)",
+            "url": "https://www.konsehoinsular.com/rss/content-list?sort_by=published_at&sort_order=DESC&tags%5B%5D=4&type%5B%5D=news",
+            "language": "Papiamentu",
+        },
+        {
+            "name": "Saba News",
+            "url": "https://www.saba-news.com/feed/",
+            "language": "English",
+        },
+    ],
+        "British Indian Ocean Territory": [
+        {
+            "name": "GOV.UK - British Indian Ocean Territory",
+            "url": "https://www.gov.uk/search/news-and-communications.atom?world_locations%5B%5D=british-indian-ocean-territory",
+            "language": "English",
+        },
+    ],
+        "Cabo Verde": [
+        {
+            "name": "Governo de Cabo Verde",
+            "url": "https://www.governo.cv/noticias/feed/",
+            "language": "Portuguese",
+        },
+    ],
+        "Cayman Islands": [
+        {
+            "name": "Daily Cayman",
+            "url": "https://daily.ky/rss.xml",
+            "language": "English",
+        },
+    ],
+        "Cocos (Keeling) Islands": [
+        {
+            "name": "Shire of Cocos (Keeling) Islands",
+            "url": "https://shire.cc/latest-news.feed?type=rss",
+            "language": "English",
+        },
+    ],
+        "Congo, The Democratic Republic of the": [
+        {
+            "name": "Actualite.cd",
+            "url": "https://actualite.cd/feed",
+            "language": "French",
+        },
+    ],
+        "Cook Islands": [
+        {
+            "name": "Cook Islands Government - Public Service Commission",
+            "url": "https://psc.gov.ck/feed/",
+            "language": "English",
+        },
+    ],
+        "Curaçao": [
+        {
+            "name": "Government of Curaçao",
+            "url": "https://gobiernu.cw/feed/",
+            "language": "Dutch/Papiamentu",
+        },
+    ],
+        "Curaçao": [
+        {
+            "name": "Government of Curaçao",
+            "url": "https://gobiernu.cw/feed/",
+            "language": "Dutch/Papiamentu",
+        },
+    ],
+        "C\u00f4te d'Ivoire": [
+        {
+            "name": "Agence Ivoirienne de Presse (AIP)",
+            "url": "https://www.aip.ci/feed/",
+            "language": "French",
+        },
+    ],
+        "Falkland Islands (Malvinas)": [
+        {
+            "name": "Falkland Islands Government",
+            "url": "https://www.gov.fk/feed/",
+            "language": "English",
+        },
+    ],
+        "Gambia": [
+        {
+            "name": "Foroyaa Newspaper",
+            "url": "https://foroyaa.net/feed/",
+            "language": "English",
+        },
+    ],
+        "Gibraltar": [
+        {
+            "name": "Gibraltar Chronicle",
+            "url": "https://www.chronicle.gi/feed/",
+            "language": "English",
+        },
+    ],
+        "Greenland": [
+        {
+            "name": "Kalaallit Nunaata Radioa (KNR)",
+            "url": "https://www.knr.gl/da/news/rss",
+            "language": "Danish",
+        },
+    ],
+        "Holy See (Vatican City State)": [
+        {
+            "name": "Holy See Press Office",
+            "url": "https://press.vatican.va/content/salastampa/en/bollettino.feedrss.xml",
+            "language": "English",
+        },
+    ],
+        "Hong Kong": [
+        {
+            "name": "Radio Television Hong Kong (RTHK)",
+            "url": "https://rthk.hk/rthk/news/rss/e_expressnews_elocal.xml",
+            "language": "English",
+        },
+    ],
+        "Iran, Islamic Republic of": [
+        {
+            "name": "IRNA - Islamic Republic News Agency",
+            "url": "https://en.irna.ir/rss",
+            "language": "English",
+        },
+    ],
+        "Isle of Man": [
+        {
+            "name": "Manx Radio",
+            "url": "https://www.manxradio.com/news/isle-of-man-news/feed.xml",
+            "language": "English",
+        },
+    ],
+        "Jersey": [
+        {
+            "name": "Government of Jersey",
+            "url": "https://www.gov.je/RSSFeeds/RSSNews.rss",
+            "language": "English",
+        },
+    ],
+        "Jersey": [
+        {
+            "name": "Today.je",
+            "url": "https://today.je/rss/",
+            "language": "English",
+        },
+    ],
+        "Kiribati": [
+        {
+            "name": "BBC News - Kiribati",
+            "url": "https://feeds.bbci.co.uk/news/topics/cp7r8vglg15t/rss.xml",
+            "language": "English",
+        },
+    ],
+        "Korea, Democratic People's Republic of": [
+        {
+            "name": "Daily NK",
+            "url": "https://www.dailynk.com/english/feed/",
+            "language": "English",
+        },
+    ],
+        "Korea, Republic of": [
+        {
+            "name": "Yonhap News Agency",
+            "url": "https://en.yna.co.kr/RSS/national.xml",
+            "language": "English",
+        },
+    ],
+        "Lao People's Democratic Republic": [
+        {
+            "name": "VOA Lao",
+            "url": "https://lao.voanews.com/api/zrjtrl-vomx-tpeo_gq",
+            "language": "Lao",
+        },
+    ],
+    
 
 }
 
