@@ -196,3 +196,59 @@ Use only the supplied information.
         raise RuntimeError(
             f"Could not generate the AI news digest: {error}"
         ) from error
+
+
+def translate_headline_to_english(headline, source_language=None):
+    """
+    Translate a news headline into English.
+
+    Preserve names, places, figures, and the original meaning.
+    Return only the translated headline.
+    """
+
+    if not headline or not headline.strip():
+        raise ValueError("A headline is required for translation.")
+
+    language_note = (
+        f"The detected source language code is {source_language}."
+        if source_language
+        else "Identify the source language yourself."
+    )
+
+    instructions = f"""
+You are a professional international news translator.
+
+Translate the supplied news headline into natural,
+accurate English.
+
+Requirements:
+
+1. Translate only the headline.
+2. Preserve the original meaning and tone.
+3. Preserve names, places, organizations, dates, and figures.
+4. Do not add explanations or background information.
+5. Do not summarize or expand the headline.
+6. Do not invent or change facts.
+7. Return only the English translation.
+
+{language_note}
+"""
+
+    try:
+        response = client.responses.create(
+            model=MODEL,
+            instructions=instructions,
+            input=headline.strip()
+        )
+
+        translation = response.output_text.strip()
+
+        if not translation:
+            raise ValueError("The translation response was empty.")
+
+        return translation
+
+    except Exception as error:
+        raise RuntimeError(
+            f"Could not translate the headline: {error}"
+        ) from error

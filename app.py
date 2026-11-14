@@ -9,6 +9,7 @@ from article_processor import process_articles
 from ai_summarizer import (
     generate_news_digest,
     generate_article_summary,
+    translate_headline_to_english,
 )
 
 from content_extractor import extract_article_content
@@ -21,6 +22,8 @@ from country_service import (
 
 from language_service import get_supported_languages
 
+from headline_language import detect_headline_language
+
 from news_database import (
     initialize_database,
     save_articles,
@@ -29,6 +32,8 @@ from news_database import (
     get_latest_digest,
     save_article_summary,
     get_article_summary,
+    save_headline_translation,
+    get_headline_translation,
 )
 
 
@@ -191,9 +196,96 @@ if "articles" in st.session_state:
 
         with st.container():
 
-            st.markdown(
-                f"### {article['title']}"
+            # Create a stable identifier for this article.
+            article_id = hashlib.sha256(
+                article["url"].encode("utf-8")
+            ).hexdigest()[:16]
+
+            # Detect the actual headline language.
+            headline_language = detect_headline_language(
+                article["title"]
             )
+
+            # Retrieve any previously saved translation.
+            saved_translation = get_headline_translation(
+                article["url"]
+            )
+
+            translated_title = None
+
+            # Reuse a cached translation only if it belongs
+            # to the current original headline.
+            if (
+                saved_translation
+                and saved_translation["original_title"] == article["title"]
+            ):
+                translated_title = saved_translation["translated_title"]
+
+            # Display the original headline.
+            if headline_language and headline_language != "en":
+
+                headline_column, button_column = st.columns(
+                    [0.75, 0.25]
+                )
+
+                with headline_column:
+                    st.markdown(
+                        f"### {article['title']}"
+                    )
+
+                with button_column:
+
+                    if st.button(
+                        "Translate to English",
+                        key=f"translate_{article_id}",
+                    ):
+
+                        # Check the database again before making
+                        # an OpenAI API request.
+                        if not translated_title:
+
+                            with st.spinner(
+                                "Translating headline..."
+                            ):
+
+                                try:
+
+                                    translated_title = (
+                                        translate_headline_to_english(
+                                            article["title"],
+                                            source_language=headline_language,
+                                        )
+                                    )
+
+                                    # Save the translation in SQLite.
+                                    save_headline_translation(
+                                        article["url"],
+                                        article["title"],
+                                        translated_title,
+                                    )
+
+                                except Exception as error:
+
+                                    st.warning(
+                                        "Headline translation failed. "
+                                        "The original headline is still "
+                                        f"available. Details: {error}"
+                                    )
+
+                # Display the saved or newly generated translation.
+                if translated_title:
+
+                    st.markdown(
+                        f"**English:** {translated_title}"
+                    )
+
+            else:
+
+                # English headlines and uncertain detections
+                # are displayed without a translation button.
+                st.markdown(
+                    f"### {article['title']}"
+                )
 
             st.write(
                 f"**Publisher:** {article['source']}"
@@ -211,11 +303,6 @@ if "articles" in st.session_state:
             st.markdown(
                 f"[Read original article]({article['url']})"
             )
-
-            # Create a stable identifier for this article.
-            article_id = hashlib.sha256(
-                article["url"].encode("utf-8")
-            ).hexdigest()[:16]
 
             # Individual AI article summary
             with st.expander(

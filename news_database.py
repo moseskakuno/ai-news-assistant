@@ -68,6 +68,19 @@ def initialize_database():
             """
         )
 
+        # Translated headline cache table
+        connection.execute(
+            """
+            CREATE TABLE IF NOT EXISTS headline_translations (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                article_url TEXT NOT NULL UNIQUE,
+                original_title TEXT NOT NULL,
+                translated_title TEXT NOT NULL,
+                created_at TEXT NOT NULL
+            )
+            """
+        )
+
 
 def save_articles(articles):
     """Save articles and update existing records by URL."""
@@ -270,6 +283,66 @@ def get_latest_digest(country, language):
             LIMIT 1
             """,
             (country, language),
+        ).fetchone()
+
+    return dict(row) if row else None
+
+
+def save_headline_translation(
+    article_url,
+    original_title,
+    translated_title
+):
+    """Save or update an English headline translation."""
+
+    if not article_url or not original_title or not translated_title:
+        raise ValueError(
+            "Article URL, original headline, and translation are required."
+        )
+
+    created_at = datetime.now(timezone.utc).isoformat()
+
+    with get_connection() as connection:
+
+        connection.execute(
+            """
+            INSERT INTO headline_translations (
+                article_url,
+                original_title,
+                translated_title,
+                created_at
+            )
+            VALUES (?, ?, ?, ?)
+
+            ON CONFLICT(article_url) DO UPDATE SET
+                original_title = excluded.original_title,
+                translated_title = excluded.translated_title,
+                created_at = excluded.created_at
+            """,
+            (
+                article_url,
+                original_title,
+                translated_title,
+                created_at,
+            ),
+        )
+
+
+def get_headline_translation(article_url):
+    """Retrieve a previously saved English headline translation."""
+
+    if not article_url:
+        return None
+
+    with get_connection() as connection:
+
+        row = connection.execute(
+            """
+            SELECT *
+            FROM headline_translations
+            WHERE article_url = ?
+            """,
+            (article_url,),
         ).fetchone()
 
     return dict(row) if row else None
